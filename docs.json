@@ -12,6 +12,14 @@
     "href": "https://mago.studio"
   },
   "favicon": "/assets/favicon.svg",
+  "redirects": [
+    { "source": "/guide/index",       "destination": "/guide/overview" },
+    { "source": "/guide/README",      "destination": "/guide/overview" },
+    { "source": "/models/index",      "destination": "/models/overview" },
+    { "source": "/models/README",     "destination": "/models/overview" },
+    { "source": "/reference/index",   "destination": "/reference/overview" },
+    { "source": "/reference/README",  "destination": "/reference/overview" }
+  ],
   "navigation": {
     "tabs": [
       {
