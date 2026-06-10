@@ -1,0 +1,89 @@
+{
+  "name": "Mago Studio",
+  "colors": {
+    "primary": "#000000",
+    "light": "#FFFFFF",
+    "dark": "#000000"
+  },
+  "logo": {
+    "light": "/assets/logo-light.svg",
+    "dark": "/assets/logo-dark.svg",
+    "href": "https://mago.studio"
+  },
+  "favicon": "/assets/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Foundations",
+            "pages": [
+              "guide/introduction",
+              "guide/getting-started",
+              "guide/app-layout",
+              "guide/projects-shots-renders",
+              "guide/credits-plans-modes"
+            ]
+          },
+          {
+            "group": "Workspaces",
+            "pages": [
+              "guide/workspaces/render-video",
+              "guide/workspaces/modify-frame",
+              "guide/workspaces/mask",
+              "guide/workspaces/upscale",
+              "guide/workspaces/global-timeline"
+            ]
+          },
+          {
+            "group": "Working in the Editor",
+            "pages": [
+              "guide/timeline-and-tracks",
+              "guide/viewport-and-comparison"
+            ]
+          },
+          {
+            "group": "Getting Good Results",
+            "pages": [
+              "guide/prompting-guide",
+              "guide/workflows-recipes",
+              "guide/troubleshooting",
+              "guide/export-and-compositing",
+              "guide/help-and-support"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Models",
+        "groups": [
+          {
+            "group": "Model Catalog",
+            "pages": [
+              "models/README",
+              "models/mago-video-models",
+              "models/closed-source-video-models",
+              "models/image-models",
+              "models/upscale-models"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "Quick Reference",
+            "pages": [
+              "reference/glossary",
+              "reference/settings-cheat-sheet",
+              "reference/keyboard-shortcuts",
+              "reference/tooltips"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
