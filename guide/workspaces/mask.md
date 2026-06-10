@@ -1,10 +1,10 @@
 # Mask Workspace
 
-[← Modify Frame](modify-frame) · [Workspaces](../index#the-five-workspaces) · [Next: Upscale →](upscale)
+[← Modify Frame](/guide/workspaces/modify-frame) · [Workspaces](/guide/overview#the-five-workspaces) · [Next: Upscale →](/guide/workspaces/upscale)
 
 ---
 
-The Mask workspace generates masks — definitions of which parts of a video get edited and which stay intact. Masks are used primarily by [Mago Inpaint](../../models/mago-video-models#mago-inpaint), but can also be downloaded for external compositing.
+The Mask workspace generates masks — definitions of which parts of a video get edited and which stay intact. Masks are used primarily by [Mago Inpaint](/models/mago-video-models#mago-inpaint), but can also be downloaded for external compositing.
 
 ## When to use masks
 
@@ -14,7 +14,7 @@ Mask-based editing fits when:
 - The rest of the video must be preserved exactly.
 - Repeated targeted edits are needed (mask once, apply many times).
 
-> **⚠️ Warning** — Don't use a mask when the *entire* frame needs to transform. Use [Mago Transform](../../models/mago-video-models#mago-transform) or [Mago Style Transfer](../../models/mago-video-models#mago-style-transfer) instead.
+> **⚠️ Warning** — Don't use a mask when the *entire* frame needs to transform. Use [Mago Transform](/models/mago-video-models#mago-transform) or [Mago Style Transfer](/models/mago-video-models#mago-style-transfer) instead.
 
 ## Mask generation modes
 
@@ -60,8 +60,8 @@ Mask renders appear in a dedicated timeline that shows only mask tracks in this 
 4. If edges look hard in the final result, increase **Blur**.
 5. For multi-element scenes, use **Prompts + Points** for highest reliability.
 
-> **📐 Pixel fidelity** — Mago Inpaint, like virtually every video model, does not operate in pure pixel space. Unmasked regions can shift slightly (brightness, color) due to compression during processing. For pixel-perfect preservation: download the mask, run the Inpaint render, then composite the result against the original source in DaVinci, After Effects, or Fusion using the downloaded mask. See [Export & compositing](../export-and-compositing#mask-export).
+> **📐 Pixel fidelity** — Mago Inpaint, like virtually every video model, does not operate in pure pixel space. Unmasked regions can shift slightly (brightness, color) due to compression during processing. For pixel-perfect preservation: download the mask, run the Inpaint render, then composite the result against the original source in DaVinci, After Effects, or Fusion using the downloaded mask. See [Export & compositing](/guide/export-and-compositing#mask-export).
 
 ---
 
-[← Modify Frame](modify-frame) · [Workspaces](../index#the-five-workspaces) · [Next: Upscale →](upscale)
+[← Modify Frame](/guide/workspaces/modify-frame) · [Workspaces](/guide/overview#the-five-workspaces) · [Next: Upscale →](/guide/workspaces/upscale)

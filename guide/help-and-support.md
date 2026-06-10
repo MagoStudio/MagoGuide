@@ -1,6 +1,6 @@
 # Help, Support & Community
 
-[← Export & compositing](export-and-compositing) · [User Guide](index)
+[← Export & compositing](/guide/export-and-compositing) · [User Guide](/guide/overview)
 
 ---
 
@@ -45,4 +45,4 @@ It exposes three copy actions:
 
 ---
 
-[← Export & compositing](export-and-compositing) · [User Guide](index)
+[← Export & compositing](/guide/export-and-compositing) · [User Guide](/guide/overview)

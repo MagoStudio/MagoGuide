@@ -1,13 +1,13 @@
 # Closed-Source Video Models
 
-[← Mago video models](mago-video-models) · [Model catalog](index) · [Image models →](image-models)
+[← Mago video models](/models/mago-video-models) · [Model catalog](/models/overview) · [Image models →](/models/image-models)
 
 ---
 
 Closed-source models are third-party models integrated into Mago. They share several properties:
 
 - **Easier to use** — fewer settings, faster onboarding.
-- **Instruction-based prompts** — tell the model what to do, not what the result should look like. ([Why?](../guide/prompting-guide))
+- **Instruction-based prompts** — tell the model what to do, not what the result should look like. ([Why?](/guide/prompting-guide))
 - **More expensive** — higher credit cost per render than Mago models.
 - **Not frame-perfect** — frame count, frame rate, character identity, and composition can drift.
 - **Stricter moderation** — content filters are tighter; VFX content like blood may be blocked.
@@ -47,7 +47,7 @@ Improved version of Kling 01 Pro. Same prompt and reference structure. Generally
 
 Character-replacement specialist. Strong at lip sync and facial expression preservation.
 
-- **Character reference:** required. A full-body reference works even for close-ups, though [Modify Frame](../guide/workspaces/modify-frame) preparation gives better results.
+- **Character reference:** required. A full-body reference works even for close-ups, though [Modify Frame](/guide/workspaces/modify-frame) preparation gives better results.
 - **Prompting:** leave the prompt empty at first. Add one only if specific issues need fixing.
 
 > **⚠️ Prompt warning** — Adding a prompt to Kling 2.6 Motion Control often makes the result *worse* than leaving it empty. Try empty first.
@@ -84,4 +84,4 @@ Alibaba model. Similar in approach to Kling 01/03 Pro.
 
 ---
 
-[← Mago video models](mago-video-models) · [Model catalog](index) · [Image models →](image-models)
+[← Mago video models](/models/mago-video-models) · [Model catalog](/models/overview) · [Image models →](/models/image-models)

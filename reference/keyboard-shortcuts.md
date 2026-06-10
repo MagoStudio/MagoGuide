@@ -1,6 +1,6 @@
 # Keyboard Shortcuts
 
-[← Quick reference](index)
+[← Quick reference](/reference/overview)
 
 ---
 
@@ -17,4 +17,4 @@
 
 ---
 
-[← Quick reference](index)
+[← Quick reference](/reference/overview)

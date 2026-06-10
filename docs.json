@@ -20,7 +20,7 @@
           {
             "group": "Foundations",
             "pages": [
-              "guide/index",
+              "guide/overview",
               "guide/introduction",
               "guide/getting-started",
               "guide/app-layout",
@@ -63,7 +63,7 @@
           {
             "group": "Model Catalog",
             "pages": [
-              "models/index",
+              "models/overview",
               "models/mago-video-models",
               "models/closed-source-video-models",
               "models/image-models",
@@ -78,7 +78,7 @@
           {
             "group": "Quick Reference",
             "pages": [
-              "reference/index",
+              "reference/overview",
               "reference/glossary",
               "reference/settings-cheat-sheet",
               "reference/keyboard-shortcuts",

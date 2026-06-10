@@ -1,10 +1,10 @@
 # Upscale Models
 
-[← Image models](image-models) · [Model catalog](index)
+[← Image models](/models/image-models) · [Model catalog](/models/overview)
 
 ---
 
-Two upscale models, used in the [Upscale workspace](../guide/workspaces/upscale). Upscaling is almost always a **final pass** — fix the look first, then upscale.
+Two upscale models, used in the [Upscale workspace](/guide/workspaces/upscale). Upscaling is almost always a **final pass** — fix the look first, then upscale.
 
 ## Creative Upscaler
 
@@ -48,4 +48,4 @@ Simple, non-creative upscaler. Clean enlargement without reconstruction.
 
 ---
 
-[← Image models](image-models) · [Model catalog](index)
+[← Image models](/models/image-models) · [Model catalog](/models/overview)

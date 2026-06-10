@@ -1,6 +1,6 @@
 # Application Layout
 
-[← Getting Started](getting-started) · [User Guide](index) · [Next: Projects, Shots & Renders →](projects-shots-renders)
+[← Getting Started](/guide/getting-started) · [User Guide](/guide/overview) · [Next: Projects, Shots & Renders →](/guide/projects-shots-renders)
 
 ---
 
@@ -34,11 +34,11 @@ flowchart TB
 
 - **Mago logo** — returns to the home view from anywhere.
 - **Project name** — the current project. Click to navigate.
-- **Shot name** — the current shot. Click for the shot list; the ℹ️ icon opens [shot statistics](projects-shots-renders#project-statistics).
+- **Shot name** — the current shot. Click for the shot list; the ℹ️ icon opens [shot statistics](/guide/projects-shots-renders#project-statistics).
 - **Credit balance** — real-time available credits. Updates after each render.
-- **Relaxed toggle** — switches between Credits mode and [Relaxed mode](credits-plans-modes#relaxed-mode). Greyed out on the Free plan.
+- **Relaxed toggle** — switches between Credits mode and [Relaxed mode](/guide/credits-plans-modes#relaxed-mode). Greyed out on the Free plan.
 - **Pricing** — opens the plans and credit packs page.
-- **Queue** — counter of in-progress and waiting jobs. Click to expand the [full queue](credits-plans-modes#the-queue).
+- **Queue** — counter of in-progress and waiting jobs. Click to expand the [full queue](/guide/credits-plans-modes#the-queue).
 - **Account avatar** — account menu (settings, billing, support).
 
 ## Workspace tabs
@@ -47,19 +47,19 @@ The five tabs determine the task being performed. Settings, viewport content, an
 
 | Tab | Icon hint | Use for |
 | --- | --- | --- |
-| [Render Video](workspaces/render-video) | Video camera | Video-to-video generation. The main workspace. |
-| [Modify Frame](workspaces/modify-frame) | Paint bucket | Keyframe or reference frame generation |
-| [Mask](workspaces/mask) | Contrasted circle in a rectangle | Mask generation for use with Inpainting |
-| [Upscale](workspaces/upscale) | Bright gem | Resolution and detail enhancement |
-| [Global Timeline](workspaces/global-timeline) | Horizontal editing bars | Cross-shot review using pinned renders |
+| [Render Video](/guide/workspaces/render-video) | Video camera | Video-to-video generation. The main workspace. |
+| [Modify Frame](/guide/workspaces/modify-frame) | Paint bucket | Keyframe or reference frame generation |
+| [Mask](/guide/workspaces/mask) | Contrasted circle in a rectangle | Mask generation for use with Inpainting |
+| [Upscale](/guide/workspaces/upscale) | Bright gem | Resolution and detail enhancement |
+| [Global Timeline](/guide/workspaces/global-timeline) | Horizontal editing bars | Cross-shot review using pinned renders |
 
 > 📸 **Screenshot needed:** `app-layout/workspace-tabs.png`
 > _The five workspace tabs._
 
 > **💡 Tip** — Switching workspaces never loses work. Settings configured in one workspace are preserved when you return, and renders remain visible as tracks. Use **Edit this Render** on a track to carry a render into another workspace as the new source.
 
-The left panel and viewport are detailed in [Timeline & tracks](timeline-and-tracks) and [Viewport & comparison](viewport-and-comparison).
+The left panel and viewport are detailed in [Timeline & tracks](/guide/timeline-and-tracks) and [Viewport & comparison](/guide/viewport-and-comparison).
 
 ---
 
-[← Getting Started](getting-started) · [User Guide](index) · [Next: Projects, Shots & Renders →](projects-shots-renders)
+[← Getting Started](/guide/getting-started) · [User Guide](/guide/overview) · [Next: Projects, Shots & Renders →](/guide/projects-shots-renders)

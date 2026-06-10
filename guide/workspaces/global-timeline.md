@@ -1,6 +1,6 @@
 # Global Timeline Workspace
 
-[← Upscale](upscale) · [Workspaces](../index#the-five-workspaces) · [Next: Timeline & tracks →](../timeline-and-tracks)
+[← Upscale](/guide/workspaces/upscale) · [Workspaces](/guide/overview#the-five-workspaces) · [Next: Timeline & tracks →](/guide/timeline-and-tracks)
 
 ---
 
@@ -30,8 +30,8 @@ Mago is designed around long-form projects — many users work on sequences of d
 
 The Global Timeline is the recommended final preview before exporting individual shots for an external editing or compositing pipeline. Catching inconsistencies here is cheaper than discovering them in a finishing tool.
 
-> **📐 Design note** — Mago does not produce a single concatenated final video. Each shot exports separately, and final assembly happens in your editing tool. The Global Timeline preview shows what the assembled sequence will look like. See [Export & compositing](../export-and-compositing).
+> **📐 Design note** — Mago does not produce a single concatenated final video. Each shot exports separately, and final assembly happens in your editing tool. The Global Timeline preview shows what the assembled sequence will look like. See [Export & compositing](/guide/export-and-compositing).
 
 ---
 
-[← Upscale](upscale) · [Workspaces](../index#the-five-workspaces) · [Next: Timeline & tracks →](../timeline-and-tracks)
+[← Upscale](/guide/workspaces/upscale) · [Workspaces](/guide/overview#the-five-workspaces) · [Next: Timeline & tracks →](/guide/timeline-and-tracks)

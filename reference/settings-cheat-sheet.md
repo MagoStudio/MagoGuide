@@ -1,10 +1,10 @@
 # Settings Cheat Sheet
 
-[← Quick reference](index)
+[← Quick reference](/reference/overview)
 
 ---
 
-Quick lookup of defaults, ranges, and when to change each setting. Full per-model context lives in the [Model catalog](../models/index).
+Quick lookup of defaults, ranges, and when to change each setting. Full per-model context lives in the [Model catalog](/models/overview).
 
 ## Universal settings (Mago video models)
 
@@ -85,9 +85,9 @@ flowchart TD
 ### Single pass or multi-pass? (Q7: how complex is the transformation?)
 
 - **Simple, single change** → single pass with the right model.
-- **Multiple changes (character + style + upscale)** → [multi-pass](../guide/workflows-recipes#recipe-multi-pass-pipeline) using _Edit this Render_ between stages.
+- **Multiple changes (character + style + upscale)** → [multi-pass](/guide/workflows-recipes#recipe-multi-pass-pipeline) using _Edit this Render_ between stages.
 - **Long-form, production work** → always multi-pass. The control is worth the extra time.
 
 ---
 
-[← Quick reference](index)
+[← Quick reference](/reference/overview)
