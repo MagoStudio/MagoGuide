@@ -8,7 +8,7 @@ Quick lookup of defaults, ranges, and when to change each setting. Full per-mode
 
 ## Universal settings (Mago video models)
 
-Defaults and ranges below are sourced from the current model configs in MagoFrontend (`src/app/models/video/`): universal settings from Mago V5, Character settings from Mago V4, Upscaler settings from the Mago upscaler model.
+Defaults and ranges below reflect the current model configs: universal settings from Mago V5, Character settings from Mago V4, Upscaler settings from the Mago upscaler model.
 
 | Setting                | Default | Range            | When to change                                                        |
 | ---------------------- | ------- | ---------------- | --------------------------------------------------------------------- |

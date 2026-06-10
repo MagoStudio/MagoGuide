@@ -4,7 +4,7 @@
 
 ---
 
-> **⚠️ Not authoritative** — This is a verbatim snapshot of the product's in-app tooltip text, generated from the app's i18n configuration (`src/app/config/i18n.ts` in MagoFrontend). Tooltips may be out of date. **Where this page contradicts the rest of the documentation, trust the documentation.** This page exists for support and agent context only.
+> **⚠️ Not authoritative** — This is a verbatim snapshot of the product's in-app tooltip text. Tooltips may be out of date. **Where this page contradicts the rest of the documentation, trust the documentation.** This page exists for support and agent context only.
 >
 > Placeholders like `{{ frames }}` and `{{ count }}` are filled in at runtime with plan-specific values.
 
