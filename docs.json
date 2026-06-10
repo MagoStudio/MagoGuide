@@ -1,5 +1,6 @@
 {
   "name": "Mago Studio",
+  "theme": "maple",
   "colors": {
     "primary": "#000000",
     "light": "#FFFFFF",
