@@ -1,6 +1,6 @@
 # Credits, Plans & Modes
 
-[← Projects, Shots & Renders](projects-shots-renders) · [User Guide](README) · [Next: Render Video workspace →](workspaces/render-video)
+[← Projects, Shots & Renders](projects-shots-renders.md) · [User Guide](README.md) · [Next: Render Video workspace →](workspaces/render-video.md)
 
 ---
 
@@ -77,7 +77,7 @@ Renders submitted in Relaxed mode or during GPU saturation wait in a queue. The 
 
 Each queue entry shows project, shot, render name, duration, frame range, and credit cost. Click an entry to navigate to that render.
 
-> **⚠️ Refunds** — Renders that take multiple hours almost always indicate an error. Contact support to request cancellation, refund, and re-rendering. See [Troubleshooting → render time](troubleshooting#render-time-issues).
+> **⚠️ Refunds** — Renders that take multiple hours almost always indicate an error. Contact support to request cancellation, refund, and re-rendering. See [Troubleshooting → render time](troubleshooting.md#render-time-issues).
 
 > 📸 **Screenshot needed:** `misc/queue-expanded.png`
 > _Expanded queue showing in-progress / waiting / done states._
@@ -91,4 +91,4 @@ Each queue entry shows project, shot, render name, duration, frame range, and cr
 
 ---
 
-[← Projects, Shots & Renders](projects-shots-renders) · [User Guide](README) · [Next: Render Video workspace →](workspaces/render-video)
+[← Projects, Shots & Renders](projects-shots-renders.md) · [User Guide](README.md) · [Next: Render Video workspace →](workspaces/render-video.md)

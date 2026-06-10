@@ -12,6 +12,9 @@
     "href": "https://mago.studio"
   },
   "favicon": "/assets/favicon.svg",
+  "redirects": [
+    { "source": "/:slug*.md", "destination": "/:slug*" }
+  ],
   "navigation": {
     "tabs": [
       {
@@ -20,6 +23,7 @@
           {
             "group": "Foundations",
             "pages": [
+              "guide/README",
               "guide/introduction",
               "guide/getting-started",
               "guide/app-layout",

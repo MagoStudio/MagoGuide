@@ -1,6 +1,6 @@
 # In-App Tooltips
 
-[← Quick reference](README)
+[← Quick reference](README.md)
 
 ---
 
@@ -151,4 +151,4 @@ The draw-your-own-mask UI is visible to Mago team members only; public users see
 
 ---
 
-[← Quick reference](README)
+[← Quick reference](README.md)

@@ -1,6 +1,6 @@
 # Prompting Guide
 
-[← Viewport & comparison](viewport-and-comparison) · [User Guide](README) · [Next: Workflows & recipes →](workflows-recipes)
+[← Viewport & comparison](viewport-and-comparison.md) · [User Guide](README.md) · [Next: Workflows & recipes →](workflows-recipes.md)
 
 ---
 
@@ -59,7 +59,7 @@ For most video transformations, **an image reference is more powerful than a lon
 
 Order of investment for best results:
 
-1. Generate a strong reference image in [Modify Frame](workspaces/modify-frame).
+1. Generate a strong reference image in [Modify Frame](workspaces/modify-frame.md).
 2. Write a short descriptive prompt that matches.
 3. Tune ControlNet and other settings only if results need refinement.
 
@@ -74,4 +74,4 @@ Available on some models. Use to exclude unwanted artifacts or content. Common v
 
 ---
 
-[← Viewport & comparison](viewport-and-comparison) · [User Guide](README) · [Next: Workflows & recipes →](workflows-recipes)
+[← Viewport & comparison](viewport-and-comparison.md) · [User Guide](README.md) · [Next: Workflows & recipes →](workflows-recipes.md)

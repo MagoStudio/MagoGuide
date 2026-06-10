@@ -1,6 +1,6 @@
 # Glossary
 
-[← Quick reference](README)
+[← Quick reference](README.md)
 
 ---
 
@@ -29,7 +29,7 @@
 | **Descriptive prompt** | A description of the desired result. Required by Mago models. |
 | **Instruction prompt** | A directive to the model. Used by closed-source and image models. |
 | **Frame-perfect** | Property of Mago models: N input frames produce N output frames, each corresponding to a specific source frame. |
-| **Img2Img (Image-to-Image)** | The class of AI models used in the **Modify Frame** tab. Takes a source frame + prompt + settings and outputs an edited frame. Distinct from video-to-video rendering. Examples: GPT Image 2, Nano Banana Pro, Seedream — the full selectable list lives in the [Tooltips reference](tooltips). |
+| **Img2Img (Image-to-Image)** | The class of AI models used in the **Modify Frame** tab. Takes a source frame + prompt + settings and outputs an edited frame. Distinct from video-to-video rendering. Examples: GPT Image 2, Nano Banana Pro, Seedream — the full selectable list lives in the [Tooltips reference](tooltips.md). |
 | **Modify Frame** | The UI tab where users apply Img2Img models to individual frames. "Modify Frame" is the product name; "Img2Img" is the technical model category. |
 | **Masking** | A workflow that produces a black-and-white mask video using the SAM3 Mask model, to feed into Inpainting. |
 | **Inpainting** | A video model (product label: **Mago Inpaint**) that edits only the region defined by a mask video. |
@@ -43,4 +43,4 @@
 
 ---
 
-[← Quick reference](README)
+[← Quick reference](README.md)
