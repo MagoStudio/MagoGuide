@@ -1,6 +1,6 @@
 # Viewport & Comparison Tools
 
-[← Timeline & tracks](timeline-and-tracks.md) · [User Guide](README.md) · [Next: Prompting guide →](prompting-guide.md)
+[← Timeline & tracks](timeline-and-tracks) · [User Guide](index) · [Next: Prompting guide →](prompting-guide)
 
 ---
 
@@ -100,4 +100,4 @@ Settings can also be shared as text — handy for applying a style across shots,
 
 ---
 
-[← Timeline & tracks](timeline-and-tracks.md) · [User Guide](README.md) · [Next: Prompting guide →](prompting-guide.md)
+[← Timeline & tracks](timeline-and-tracks) · [User Guide](index) · [Next: Prompting guide →](prompting-guide)

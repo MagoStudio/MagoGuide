@@ -1,6 +1,6 @@
 # Workflows & Recipes
 
-[← Prompting guide](prompting-guide.md) · [User Guide](README.md) · [Next: Troubleshooting →](troubleshooting.md)
+[← Prompting guide](prompting-guide) · [User Guide](index) · [Next: Troubleshooting →](troubleshooting)
 
 ---
 
@@ -16,10 +16,10 @@ Complete, step-by-step workflows for common goals.
 ## Recipe: Stylize a live-action shot
 
 **Goal:** change the visual style of acted footage while preserving the actor's performance, lip sync, and expressions.
-**Model:** [Mago Style Transfer](../models/mago-video-models.md#mago-style-transfer).
+**Model:** [Mago Style Transfer](../models/mago-video-models#mago-style-transfer).
 
 1. Upload the source video to a new shot.
-2. Open [Modify Frame](workspaces/modify-frame.md). Select a representative frame (usually one where the actor's face is visible).
+2. Open [Modify Frame](workspaces/modify-frame). Select a representative frame (usually one where the actor's face is visible).
 3. Choose **GPT Image 2**. Write an instruction prompt with strong preservation: _"Change the visual style to oil painting with thick brushstrokes. Keep the character, composition, lighting, and proportions intact."_
 4. Generate. Iterate until the frame matches the intended look.
 5. Click **Use this** — the frame becomes the reference for the next render.
@@ -33,7 +33,7 @@ Complete, step-by-step workflows for common goals.
 ## Recipe: Replace a character
 
 **Goal:** swap the character in a shot with a different character.
-**Model:** [Mago Character](../models/mago-video-models.md#mago-character) or [Kling 3.0 Motion Control](../models/closed-source-video-models.md#kling-30-motion-control).
+**Model:** [Mago Character](../models/mago-video-models#mago-character) or [Kling 3.0 Motion Control](../models/closed-source-video-models#kling-30-motion-control).
 
 1. Upload the source video.
 2. In Modify Frame, generate the new character matching the source pose. Use GPT Image 2: _"Replace the character with [new character description]. Keep the same pose, framing, and background."_
@@ -52,9 +52,9 @@ Complete, step-by-step workflows for common goals.
 ## Recipe: Edit a specific element
 
 **Goal:** change one element (a prop, clothing, an object) while leaving everything else untouched.
-**Model:** [Mago Inpaint](../models/mago-video-models.md#mago-inpaint).
+**Model:** [Mago Inpaint](../models/mago-video-models#mago-inpaint).
 
-1. Open the [Mask](workspaces/mask.md) workspace.
+1. Open the [Mask](workspaces/mask) workspace.
 2. Use Prompts or Points to mask the element. E.g. _"red car"_.
 3. Generate. Compare the mask against the source with the slider. Verify coverage.
 4. If too tight, increase **Expand**. If edges look hard, increase **Blur**.
@@ -64,7 +64,7 @@ Complete, step-by-step workflows for common goals.
 8. Select the mask track and the reference image.
 9. Write a descriptive prompt for the scene as it should look after the edit. E.g. _"A blue sedan in the parking lot."_
 10. Render on a test range. Verify the unmasked regions are preserved.
-11. If unmasked regions show slight changes (brightness shift), plan to [composite externally](export-and-compositing.md#mask-export) with the downloaded mask for pixel-perfect preservation.
+11. If unmasked regions show slight changes (brightness shift), plan to [composite externally](export-and-compositing#mask-export) with the downloaded mask for pixel-perfect preservation.
 
 ## Recipe: Multi-pass pipeline
 
@@ -108,4 +108,4 @@ flowchart TD
 
 ---
 
-[← Prompting guide](prompting-guide.md) · [User Guide](README.md) · [Next: Troubleshooting →](troubleshooting.md)
+[← Prompting guide](prompting-guide) · [User Guide](index) · [Next: Troubleshooting →](troubleshooting)

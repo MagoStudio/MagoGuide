@@ -1,6 +1,6 @@
 # Modify Frame Workspace
 
-[← Render Video](render-video.md) · [Workspaces](../README.md#the-five-workspaces) · [Next: Mask →](mask.md)
+[← Render Video](render-video) · [Workspaces](../index#the-five-workspaces) · [Next: Mask →](mask)
 
 ---
 
@@ -41,7 +41,7 @@ The Settings panel lets you:
 
 ## Model selection
 
-Image models are detailed in the [Image models catalog](../../models/image-models.md). Quick guide:
+Image models are detailed in the [Image models catalog](../../models/image-models). Quick guide:
 
 - **GPT Image 2** — best precision for editing. Respects original content closely. Supports a mask image for region-specific edits.
 - **Nano Banana Pro** — strong general-purpose results. Good default when unsure.
@@ -56,7 +56,7 @@ All image models accept **instruction-based** prompts. The most important habit 
 > 🟡 Better: _"Change the building into a stone castle."_
 > ✅ Best: _"Change the building into a medieval stone castle. Keep the original character, composition, lighting, and outlines intact."_
 
-See the full [Prompting guide](../prompting-guide.md).
+See the full [Prompting guide](../prompting-guide).
 
 ## Auto Prompt
 
@@ -85,4 +85,4 @@ Click any generated image to enlarge it. In the enlarged view, comparison button
 
 ---
 
-[← Render Video](render-video.md) · [Workspaces](../README.md#the-five-workspaces) · [Next: Mask →](mask.md)
+[← Render Video](render-video) · [Workspaces](../index#the-five-workspaces) · [Next: Mask →](mask)

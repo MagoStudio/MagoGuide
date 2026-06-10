@@ -1,6 +1,6 @@
 # Export & Compositing
 
-[← Troubleshooting](troubleshooting.md) · [User Guide](README.md) · [Next: Help & support →](help-and-support.md)
+[← Troubleshooting](troubleshooting) · [User Guide](index) · [Next: Help & support →](help-and-support)
 
 ---
 
@@ -19,11 +19,11 @@ Mago is **not a finishing tool.** Final assembly happens in an external editor o
 
 ## Modify Frame exports
 
-Every generated image in [Modify Frame](workspaces/modify-frame.md) has its own download action — useful for exporting frames to another tool, building a reference frame library, or sharing specific frames.
+Every generated image in [Modify Frame](workspaces/modify-frame) has its own download action — useful for exporting frames to another tool, building a reference frame library, or sharing specific frames.
 
 ## Mask export
 
-Masks from the [Mask workspace](workspaces/mask.md) can be downloaded. Combined with the original source and the inpainting output, this enables **pixel-perfect compositing** in external tools — the workaround for the slight pixel shifts video models introduce in unmasked regions.
+Masks from the [Mask workspace](workspaces/mask) can be downloaded. Combined with the original source and the inpainting output, this enables **pixel-perfect compositing** in external tools — the workaround for the slight pixel shifts video models introduce in unmasked regions.
 
 ## EXR for VFX pipelines
 
@@ -48,7 +48,7 @@ flowchart LR
 ```
 
 1. Render each shot at 1280 (lower if budget-constrained).
-2. Validate the look in the [Global Timeline](workspaces/global-timeline.md).
+2. Validate the look in the [Global Timeline](workspaces/global-timeline).
 3. Export each shot as MP4 for review or EXR for finishing.
 4. Assemble in DaVinci Resolve, Premiere, or similar.
 5. Composite in Nuke, After Effects, or Fusion if needed.
@@ -56,4 +56,4 @@ flowchart LR
 
 ---
 
-[← Troubleshooting](troubleshooting.md) · [User Guide](README.md) · [Next: Help & support →](help-and-support.md)
+[← Troubleshooting](troubleshooting) · [User Guide](index) · [Next: Help & support →](help-and-support)

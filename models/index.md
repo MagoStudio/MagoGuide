@@ -1,6 +1,6 @@
 # Model Catalog
 
-Mago integrates two families of video models plus image and upscale models. This section is the **single source of truth** for what each model does and how to configure it — the [user guide](../guide/README.md) links here rather than duplicating specs.
+Mago integrates two families of video models plus image and upscale models. This section is the **single source of truth** for what each model does and how to configure it — the [user guide](../guide/index) links here rather than duplicating specs.
 
 ## The two families
 
@@ -15,20 +15,20 @@ The most important distinction in all of Mago:
 | Relaxed mode | ✅ Available | ❌ Always consume credits |
 | Best fit | Long-form, precision, production | Quick shots, prototypes |
 
-See the [Prompting guide](../guide/prompting-guide.md) for why prompt style matters so much.
+See the [Prompting guide](../guide/prompting-guide) for why prompt style matters so much.
 
 ## Catalog
 
 | Page | Models |
 | --- | --- |
-| [Mago video models](mago-video-models.md) | Mago Transform · Mago Style Transfer · Mago Character · Mago Inpaint |
-| [Closed-source video models](closed-source-video-models.md) | Kling 01 / 03 Pro · Kling 2.6 / 3.0 Motion Control · Seedance 2.0 · Happy Horse |
-| [Image models](image-models.md) | GPT Image 2 · Nano Banana Pro · Nano Banana 2 · legacy models |
-| [Upscale models](upscale-models.md) | Upscaler · Creative Upscaler |
+| [Mago video models](mago-video-models) | Mago Transform · Mago Style Transfer · Mago Character · Mago Inpaint |
+| [Closed-source video models](closed-source-video-models) | Kling 01 / 03 Pro · Kling 2.6 / 3.0 Motion Control · Seedance 2.0 · Happy Horse |
+| [Image models](image-models) | GPT Image 2 · Nano Banana Pro · Nano Banana 2 · legacy models |
+| [Upscale models](upscale-models) | Upscaler · Creative Upscaler |
 
 ## Which model should I use?
 
-Quick reference (full version with alternatives in [the settings cheat sheet](../reference/settings-cheat-sheet.md)):
+Quick reference (full version with alternatives in [the settings cheat sheet](../reference/settings-cheat-sheet)):
 
 | Goal | Recommended | Alternative |
 | --- | --- | --- |
@@ -56,4 +56,4 @@ flowchart TD
   Precision -->|Quick, lower precision OK| Closed[Kling 03 Pro /<br/>Seedance / Happy Horse]
 ```
 
-A fuller decision tree including image and upscale work lives in the [model decision tree reference](../reference/settings-cheat-sheet.md#model-decision-tree).
+A fuller decision tree including image and upscale work lives in the [model decision tree reference](../reference/settings-cheat-sheet#model-decision-tree).

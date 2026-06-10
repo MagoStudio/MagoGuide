@@ -12,9 +12,6 @@
     "href": "https://mago.studio"
   },
   "favicon": "/assets/favicon.svg",
-  "redirects": [
-    { "source": "/:slug*.md", "destination": "/:slug*" }
-  ],
   "navigation": {
     "tabs": [
       {
@@ -23,7 +20,7 @@
           {
             "group": "Foundations",
             "pages": [
-              "guide/README",
+              "guide/index",
               "guide/introduction",
               "guide/getting-started",
               "guide/app-layout",
@@ -66,7 +63,7 @@
           {
             "group": "Model Catalog",
             "pages": [
-              "models/README",
+              "models/index",
               "models/mago-video-models",
               "models/closed-source-video-models",
               "models/image-models",
@@ -81,6 +78,7 @@
           {
             "group": "Quick Reference",
             "pages": [
+              "reference/index",
               "reference/glossary",
               "reference/settings-cheat-sheet",
               "reference/keyboard-shortcuts",

@@ -1,6 +1,6 @@
 # Troubleshooting
 
-[← Workflows & recipes](workflows-recipes.md) · [User Guide](README.md) · [Next: Export & compositing →](export-and-compositing.md)
+[← Workflows & recipes](workflows-recipes) · [User Guide](index) · [Next: Export & compositing →](export-and-compositing)
 
 ---
 
@@ -36,7 +36,7 @@ Common problems and their fixes, grouped by symptom.
 | Symptom | Likely cause | Fix |
 | --- | --- | --- |
 | Mask too tight, visible seams in render | Mask too conservative | Increase Expand by 5–10 px. Increase Blur. |
-| Pixel shift in unmasked regions of an inpaint result | Compression in video models, not a bug | Download the mask. [Composite externally](export-and-compositing.md#mask-export) for pixel-perfect preservation. |
+| Pixel shift in unmasked regions of an inpaint result | Compression in video models, not a bug | Download the mask. [Composite externally](export-and-compositing#mask-export) for pixel-perfect preservation. |
 
 ## Face issues (Mago Character)
 
@@ -52,7 +52,7 @@ Common problems and their fixes, grouped by symptom.
 
 | Symptom | Fix |
 | --- | --- |
-| Render taking many hours | Contact support — this is usually an error. [Refunds](credits-plans-modes.md#the-queue) are available. |
+| Render taking many hours | Contact support — this is usually an error. [Refunds](credits-plans-modes#the-queue) are available. |
 | Render time estimate keeps growing | Known issue. Wait for completion or contact support. |
 | Renders queuing in Credits mode despite available credits | Likely GPU saturation. Wait, or switch to Relaxed mode for non-urgent work. |
 
@@ -60,13 +60,13 @@ Common problems and their fixes, grouped by symptom.
 
 | Symptom | Fix |
 | --- | --- |
-| Mago model not changing the scene much | Verify the prompt is [descriptive, not instruction-based](prompting-guide.md). Make the description more specific. |
+| Mago model not changing the scene much | Verify the prompt is [descriptive, not instruction-based](prompting-guide). Make the description more specific. |
 | Closed-source model changing too much | Add preservation directives: keep the character, composition, lighting, framing. |
 | Nano Banana Pro confusing source and reference | Add explicit phrasing: _"use the first image as the reference"_. |
 | Output looks generic | Use a stronger reference image. Be more specific in the prompt. |
 
 ---
 
-> **🆘 Still stuck?** Use the in-app **Debug Info** panel (**Ctrl + Shift + D**) to copy diagnostic info and share it with support. See [Help & support](help-and-support.md).
+> **🆘 Still stuck?** Use the in-app **Debug Info** panel (**Ctrl + Shift + D**) to copy diagnostic info and share it with support. See [Help & support](help-and-support).
 
-[← Workflows & recipes](workflows-recipes.md) · [User Guide](README.md) · [Next: Export & compositing →](export-and-compositing.md)
+[← Workflows & recipes](workflows-recipes) · [User Guide](index) · [Next: Export & compositing →](export-and-compositing)
