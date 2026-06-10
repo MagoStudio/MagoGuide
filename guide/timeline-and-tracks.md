@@ -1,6 +1,6 @@
 # Timeline & Tracks
 
-[← Global Timeline](workspaces/global-timeline.md) · [User Guide](README.md) · [Next: Viewport & comparison →](viewport-and-comparison.md)
+[← Global Timeline](workspaces/global-timeline) · [User Guide](README) · [Next: Viewport & comparison →](viewport-and-comparison)
 
 ---
 
@@ -55,9 +55,9 @@ Three buttons on the left edge of each render track:
 
 | Button | Function |
 | --- | --- |
-| **Pin to Global Preview** | Marks this track as the shot's representative in the [Global Timeline](workspaces/global-timeline.md). One pin per shot. |
+| **Pin to Global Preview** | Marks this track as the shot's representative in the [Global Timeline](workspaces/global-timeline). One pin per shot. |
 | **Reuse Settings** | Loads the track's settings into the Settings panel — the quickest way to iterate with small tweaks. |
-| **Edit this Render** | Uses this track as the input video for the next render. The foundation of the [multi-pass workflow](workflows-recipes.md#recipe-multi-pass-pipeline). |
+| **Edit this Render** | Uses this track as the input video for the next render. The foundation of the [multi-pass workflow](workflows-recipes#recipe-multi-pass-pipeline). |
 
 ## 3-dot menu options
 
@@ -65,13 +65,13 @@ Three buttons on the left edge of each render track:
 | --- | --- |
 | **Download PNG** | Per-frame PNG export, zipped. |
 | **Download with info** | MP4 with a settings overlay. Useful for production review. |
-| **Download EXR** | EXR 16-bit sequence. Only if EXR was enabled in Advanced settings during render. For [VFX pipelines](export-and-compositing.md#exr-for-vfx-pipelines). |
+| **Download EXR** | EXR 16-bit sequence. Only if EXR was enabled in Advanced settings during render. For [VFX pipelines](export-and-compositing#exr-for-vfx-pipelines). |
 | **Download as video and images** | A single ZIP with video, frames, and settings. |
 | **Delete** | Remove the track. |
 
 ## Comparison
 
-Click one track, then hold **Ctrl/Cmd** and click another to activate the comparison view (see [Viewport & comparison](viewport-and-comparison.md)). Up to four tracks can be compared at once. You can also activate comparison via the view-mode buttons at the top of the viewport.
+Click one track, then hold **Ctrl/Cmd** and click another to activate the comparison view (see [Viewport & comparison](viewport-and-comparison)). Up to four tracks can be compared at once. You can also activate comparison via the view-mode buttons at the top of the viewport.
 
 ## Mask track visibility
 
@@ -79,8 +79,8 @@ In the Mask workspace, the timeline shows only mask tracks — this avoids clutt
 
 ## Iterated tracks
 
-A track produced by clicking **Edit this Render** on a previous track is an **iterated track**. It uses the previous render as input rather than the source video. This is how multi-pass effects are built — see the [recipes](workflows-recipes.md).
+A track produced by clicking **Edit this Render** on a previous track is an **iterated track**. It uses the previous render as input rather than the source video. This is how multi-pass effects are built — see the [recipes](workflows-recipes).
 
 ---
 
-[← Global Timeline](workspaces/global-timeline.md) · [User Guide](README.md) · [Next: Viewport & comparison →](viewport-and-comparison.md)
+[← Global Timeline](workspaces/global-timeline) · [User Guide](README) · [Next: Viewport & comparison →](viewport-and-comparison)

@@ -1,6 +1,6 @@
 # Projects, Shots & Renders
 
-[← Application Layout](app-layout.md) · [User Guide](README.md) · [Next: Credits, Plans & Modes →](credits-plans-modes.md)
+[← Application Layout](app-layout) · [User Guide](README) · [Next: Credits, Plans & Modes →](credits-plans-modes)
 
 ---
 
@@ -60,8 +60,8 @@ Useful for tracking the cost of arriving at a final look, and for reviewing whic
 
 Every render produces a new track in the shot's vertical timeline, stacked below the source. Tracks can be rated, renamed, used as input for further renders (via **Edit this Render**), and downloaded.
 
-Full detail: [Timeline & tracks](timeline-and-tracks.md).
+Full detail: [Timeline & tracks](timeline-and-tracks).
 
 ---
 
-[← Application Layout](app-layout.md) · [User Guide](README.md) · [Next: Credits, Plans & Modes →](credits-plans-modes.md)
+[← Application Layout](app-layout) · [User Guide](README) · [Next: Credits, Plans & Modes →](credits-plans-modes)

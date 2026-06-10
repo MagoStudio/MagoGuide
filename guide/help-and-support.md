@@ -1,6 +1,6 @@
 # Help, Support & Community
 
-[← Export & compositing](export-and-compositing.md) · [User Guide](README.md)
+[← Export & compositing](export-and-compositing) · [User Guide](README)
 
 ---
 
@@ -45,4 +45,4 @@ It exposes three copy actions:
 
 ---
 
-[← Export & compositing](export-and-compositing.md) · [User Guide](README.md)
+[← Export & compositing](export-and-compositing) · [User Guide](README)

@@ -1,10 +1,10 @@
 # Image Models (Modify Frame)
 
-[← Closed-source video models](closed-source-video-models.md) · [Model catalog](README.md) · [Upscale models →](upscale-models.md)
+[← Closed-source video models](closed-source-video-models) · [Model catalog](README) · [Upscale models →](upscale-models)
 
 ---
 
-Image models edit, stylize, or transform a single frame in the [Modify Frame](../guide/workspaces/modify-frame.md) workspace. **All current image models accept instruction-based prompts.** The most important habit is including preservation directives.
+Image models edit, stylize, or transform a single frame in the [Modify Frame](../guide/workspaces/modify-frame) workspace. **All current image models accept instruction-based prompts.** The most important habit is including preservation directives.
 
 > **💡 Preservation directives** — For most edits, instruct the model to preserve what should *not* change:
 > _"Keep the original composition."_ · _"Keep the original outlines."_ · _"Keep the original character intact."_ · _"Do not change the lighting."_ · _"Keep the original framing and proportions."_
@@ -65,4 +65,4 @@ Still available but generally superseded by the models above.
 
 ---
 
-[← Closed-source video models](closed-source-video-models.md) · [Model catalog](README.md) · [Upscale models →](upscale-models.md)
+[← Closed-source video models](closed-source-video-models) · [Model catalog](README) · [Upscale models →](upscale-models)

@@ -1,6 +1,6 @@
 # Upscale Workspace
 
-[← Mask](mask.md) · [Workspaces](../README.md#the-five-workspaces) · [Next: Global Timeline →](global-timeline.md)
+[← Mask](mask) · [Workspaces](../README#the-five-workspaces) · [Next: Global Timeline →](global-timeline)
 
 ---
 
@@ -20,7 +20,7 @@ Pick any video or render in the shot. To upscale a specific render in one step:
 
 ## The two upscale models
 
-Full detail: [Upscale models catalog](../../models/upscale-models.md).
+Full detail: [Upscale models catalog](../../models/upscale-models).
 
 | Model | Approach | Best for |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ The most important Creative Upscaler setting is **Denoise**:
 
 Upscaling is usually a **final pass**:
 
-1. Validate the look in [Modify Frame](modify-frame.md).
+1. Validate the look in [Modify Frame](modify-frame).
 2. Render at 1280 with Mago Transform or Style Transfer.
 3. Click **Edit this Render** on the final track.
 4. Switch to Upscale → **Upscaler ×2** for 2560 output, or **Creative Upscaler** if reconstruction is desired.
@@ -48,4 +48,4 @@ Upscaling is usually a **final pass**:
 
 ---
 
-[← Mask](mask.md) · [Workspaces](../README.md#the-five-workspaces) · [Next: Global Timeline →](global-timeline.md)
+[← Mask](mask) · [Workspaces](../README#the-five-workspaces) · [Next: Global Timeline →](global-timeline)

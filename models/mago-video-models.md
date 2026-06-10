@@ -1,6 +1,6 @@
 # Mago Video Models
 
-[← Model catalog](README.md) · [Closed-source video models →](closed-source-video-models.md)
+[← Model catalog](README) · [Closed-source video models →](closed-source-video-models)
 
 ---
 
@@ -9,9 +9,9 @@ Mago video models are built on Mago's own architecture, leveraging open-source f
 **All Mago video models share these properties:**
 
 - **Frame-perfect** — N input frames produce N output frames, each corresponding to a specific source frame.
-- **Descriptive prompts** — describe the desired result; do not write instructions. ([Why?](../guide/prompting-guide.md))
+- **Descriptive prompts** — describe the desired result; do not write instructions. ([Why?](../guide/prompting-guide))
 - **Settings-rich** — more controls than closed-source alternatives. Harder to learn, more powerful once learned.
-- **Available in Relaxed mode** — unmetered usage subject to [plan limits](../guide/credits-plans-modes.md#relaxed-mode).
+- **Available in Relaxed mode** — unmetered usage subject to [plan limits](../guide/credits-plans-modes#relaxed-mode).
 - **Confidential** — not used to train models. Project data stays private.
 
 | Model | Type | Use it when… |
@@ -105,7 +105,7 @@ Mago Transform expects **descriptive** prompts. Describe what the output looks l
 | Lip sync drifts on long shots | Chunking issue | Reduce context overlap; ensure Dynamic reference is on. |
 | Style doesn't apply strongly | Reference too generic / input strength too high | Use a more distinctive reference; lower video input strength. |
 
-More: [Troubleshooting](../guide/troubleshooting.md).
+More: [Troubleshooting](../guide/troubleshooting).
 
 ---
 
@@ -113,7 +113,7 @@ More: [Troubleshooting](../guide/troubleshooting.md).
 
 **Type: character replacement.** Replaces the character in any scene with a character from a reference image, with or without the reference's background. The reference doesn't need to match the source framing — a full-body reference can replace a close-up character.
 
-> **🧪 Recommended pre-step** — Go through [Modify Frame](../guide/workspaces/modify-frame.md) first. Generate a reference closely matching the source pose using GPT Image 2 or Nano Banana Pro, then use that frame as the Mago Character reference. Dramatically more controllable than a generic reference.
+> **🧪 Recommended pre-step** — Go through [Modify Frame](../guide/workspaces/modify-frame) first. Generate a reference closely matching the source pose using GPT Image 2 or Nano Banana Pro, then use that frame as the Mago Character reference. Dramatically more controllable than a generic reference.
 
 ### Settings
 
@@ -152,7 +152,7 @@ More: [Troubleshooting](../guide/troubleshooting.md).
 
 ## Mago Inpaint
 
-**Type: precise localized edits.** Edits a masked region while leaving the rest intact. Inputs: a source video, a [mask](../guide/workspaces/mask.md), an image reference showing what the masked region should look like, and a descriptive prompt of the post-edit scene.
+**Type: precise localized edits.** Edits a masked region while leaving the rest intact. Inputs: a source video, a [mask](../guide/workspaces/mask), an image reference showing what the masked region should look like, and a descriptive prompt of the post-edit scene.
 
 ### Settings
 
@@ -186,8 +186,8 @@ Mago Inpaint (like most video models) doesn't operate in pure pixel space — un
 2. Render the Mago Inpaint result.
 3. In Nuke, After Effects, or Fusion, composite the inpainted result onto the original source using the downloaded mask.
 
-This guarantees unmasked pixels are identical to the source. See [Export & compositing](../guide/export-and-compositing.md).
+This guarantees unmasked pixels are identical to the source. See [Export & compositing](../guide/export-and-compositing).
 
 ---
 
-[← Model catalog](README.md) · [Closed-source video models →](closed-source-video-models.md)
+[← Model catalog](README) · [Closed-source video models →](closed-source-video-models)

@@ -1,6 +1,6 @@
 # Keyboard Shortcuts
 
-[← Quick reference](README.md)
+[← Quick reference](README)
 
 ---
 
@@ -17,4 +17,4 @@
 
 ---
 
-[← Quick reference](README.md)
+[← Quick reference](README)

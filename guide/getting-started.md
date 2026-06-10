@@ -1,6 +1,6 @@
 # Getting Started
 
-[← Introduction](introduction.md) · [User Guide](README.md) · [Next: Application Layout →](app-layout.md)
+[← Introduction](introduction) · [User Guide](README) · [Next: Application Layout →](app-layout)
 
 ---
 
@@ -43,7 +43,7 @@ The home page is your starting point — return to it anytime by clicking the Ma
 3. Organize shots into folders, rename, and manage them from here.
 4. To work on a shot, click it, then close the shots panel. Repeat to switch shots.
 
-> **📐 Design note** — A common mistake is uploading an entire scene as one source video. Split scenes into shots in an external editor first, then upload each shot. This makes iteration faster, settings more transferable, and review cleaner. See [Projects, shots & renders](projects-shots-renders.md).
+> **📐 Design note** — A common mistake is uploading an entire scene as one source video. Split scenes into shots in an external editor first, then upload each shot. This makes iteration faster, settings more transferable, and review cleaner. See [Projects, shots & renders](projects-shots-renders).
 
 ## 3. Modify a frame (validate the look)
 
@@ -61,7 +61,7 @@ Before running a video render, validate the style on a single frame. **This is t
 > 📸 **Screenshot needed:** `getting-started/03-modify-frame.png`
 > _Modify Frame workspace with a generated result._
 
-Full detail: [Modify Frame workspace](workspaces/modify-frame.md).
+Full detail: [Modify Frame workspace](workspaces/modify-frame).
 
 ## 4. Render a video
 
@@ -72,7 +72,7 @@ Full detail: [Modify Frame workspace](workspaces/modify-frame.md).
 
 > **🧪 Workflow** — Always test on an 80–150 frame range before committing to a full-clip render. Find the right model, prompt, and settings first; only run the full clip once the test result satisfies you.
 
-Full detail: [Render Video workspace](workspaces/render-video.md).
+Full detail: [Render Video workspace](workspaces/render-video).
 
 ## 5. Review and iterate
 
@@ -90,8 +90,8 @@ Full detail: [Render Video workspace](workspaces/render-video.md).
 1. Click the download icon to the left of the render track or image.
 2. Video clips download as MP4, images as JPG.
 
-More options (PNG/EXR sequences, side-by-side videos): [Export & compositing](export-and-compositing.md).
+More options (PNG/EXR sequences, side-by-side videos): [Export & compositing](export-and-compositing).
 
 ---
 
-[← Introduction](introduction.md) · [User Guide](README.md) · [Next: Application Layout →](app-layout.md)
+[← Introduction](introduction) · [User Guide](README) · [Next: Application Layout →](app-layout)

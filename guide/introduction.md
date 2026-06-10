@@ -1,6 +1,6 @@
 # Introduction & Product Philosophy
 
-[← User Guide](README.md) · [Next: Getting Started →](getting-started.md)
+[← User Guide](README) · [Next: Getting Started →](getting-started)
 
 ---
 
@@ -20,7 +20,7 @@ A project is a collection of shots. Each shot is rendered separately, with its o
 
 ### 2. Iterate at the image level first
 
-The [Modify Frame](workspaces/modify-frame.md) workspace is the recommended starting point for most workflows. Before launching a video render, generate a target frame with an image model and validate the look.
+The [Modify Frame](workspaces/modify-frame) workspace is the recommended starting point for most workflows. Before launching a video render, generate a target frame with an image model and validate the look.
 
 **Videos are expensive; images are cheap.** Failing fast at the image level saves credits, time, and frustration. Then use the validated frame as a keyframe or reference for the video model.
 
@@ -28,7 +28,7 @@ The [Modify Frame](workspaces/modify-frame.md) workspace is the recommended star
 
 Complex effects work best split into stages. The **Edit this Render** button on each track lets you chain operations: replace the character on pass one, stylize on pass two, upscale on pass three. Each pass is more controllable than trying to do everything at once.
 
-See the [multi-pass recipe](workflows-recipes.md#recipe-multi-pass-pipeline) for the flagship example.
+See the [multi-pass recipe](workflows-recipes#recipe-multi-pass-pipeline) for the flagship example.
 
 ### 4. Frame-perfect output
 
@@ -40,7 +40,7 @@ This is a deliberate contrast with closed-source models, which apply hidden opti
 
 Mago models expect a **description** of the desired result — write what the output should look like. Closed-source models (Kling, Seedance, Happy Horse) expect **instructions** — tell them what to do.
 
-> **⚠️ Warning** — This is the single biggest source of bad results when switching between model families. See the full [Prompting guide](prompting-guide.md).
+> **⚠️ Warning** — This is the single biggest source of bad results when switching between model families. See the full [Prompting guide](prompting-guide).
 
 ## Privacy & confidentiality
 
@@ -64,8 +64,8 @@ Mago integrates two model families. Picking the right tool starts with understan
 | Deployment flexibility | Mago infra, private cloud, or on-premise | Provider infra only |
 | Best fit | Long-form, precision, production pipelines | Quick shots, prototypes, simple transforms |
 
-Full per-model detail lives in the [Model catalog](../models/README.md).
+Full per-model detail lives in the [Model catalog](../models/README).
 
 ---
 
-[← User Guide](README.md) · [Next: Getting Started →](getting-started.md)
+[← User Guide](README) · [Next: Getting Started →](getting-started)
