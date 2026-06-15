@@ -6,8 +6,7 @@
 
 Modify Frame is the image generation workspace. It edits or stylizes single frames using image-to-image models, and it's the **recommended starting point for almost every video workflow**.
 
-> 📸 **Screenshot needed:** `workspaces/modify-frame-overview.png`
-> _Modify Frame workspace, full layout._
+![Modify Frame workspace, full layout.](/assets/screenshots/workspaces/modify-frame-overview.png)
 
 ## Why Modify Frame first
 

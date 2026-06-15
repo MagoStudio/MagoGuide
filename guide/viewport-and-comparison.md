@@ -21,8 +21,7 @@ A row of buttons at the top of the viewport switches view configurations:
 
 The source track can be compared against any render — use this to verify how much the render changed.
 
-> 📸 **Screenshot needed:** `viewport/compare-4.png`
-> _2×2 four-up comparison._
+![2×2 four-up comparison.](/assets/screenshots/viewport/compare-4.png)
 
 ## Settings difference display
 
@@ -40,8 +39,7 @@ This is one of Mago's signature debugging features. Common diagnoses from the Co
 - Depth ambiguity in low-contrast scenes producing flat output.
 - SoftEdge picking up too much texture detail, over-constraining the model.
 
-> 📸 **Screenshot needed:** `viewport/controlnet-visualization.png`
-> _ControlNet (depth/pose) map shown alongside a render._
+![ControlNet (depth/pose) map shown alongside a render.](/assets/screenshots/viewport/controlnet-visualization.png)
 
 ## Viewport tools
 
@@ -71,8 +69,7 @@ Holds the parameters for the next render in the active workspace. The active wor
 
 ### Render Info tab
 
-> 📸 **Screenshot needed:** `misc/render-info-tab.png`
-> _Render Info tab showing a track's metadata._
+![Render Info tab showing a track's metadata.](/assets/screenshots/misc/render-info-tab.png)
 
 Shows metadata for the currently selected render, mask, or upscale track:
 

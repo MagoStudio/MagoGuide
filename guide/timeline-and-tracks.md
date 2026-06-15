@@ -6,8 +6,7 @@
 
 The timeline is the right-side panel showing every render in the current shot. It's the unit of work organization at the shot level.
 
-> 📸 **Screenshot needed:** `timeline/track-anatomy.png`
-> _A render track with side buttons, badges, and 3-dot menu annotated._
+![A render track with side buttons, badges, and 3-dot menu annotated.](/assets/screenshots/timeline/track-anatomy.png)
 
 ## Why vertical?
 

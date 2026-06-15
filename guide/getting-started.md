@@ -33,8 +33,7 @@ The home page is your starting point — return to it anytime by clicking the Ma
 3. Upload your source video. You can crop it at this stage if needed.
 4. Your project now appears on the home screen.
 
-> 📸 **Screenshot needed:** `getting-started/01-home-create-project.png`
-> _Home screen with the **Create Project** button highlighted._
+![Home screen with the Create Project button highlighted.](/assets/screenshots/getting-started/01-home-create-project.png)
 
 ### A project with multiple shots
 
@@ -58,8 +57,7 @@ Before running a video render, validate the style on a single frame. **This is t
 7. Review. To refine, click **Iterate** below the image — this uses that output as the new base.
 8. Once satisfied, click **Use This**. You'll jump to Render Video with your keyframe set.
 
-> 📸 **Screenshot needed:** `getting-started/03-modify-frame.png`
-> _Modify Frame workspace with a generated result._
+![Modify Frame workspace with a generated result.](/assets/screenshots/getting-started/03-modify-frame.png)
 
 Full detail: [Modify Frame workspace](/guide/workspaces/modify-frame).
 
@@ -82,8 +80,7 @@ Full detail: [Render Video workspace](/guide/workspaces/render-video).
 
 > **💡 Tip** — Launch two renders in parallel with slightly different prompts or settings, then compare side by side. Mago is designed to put you in a state of flow, not to wait for sequential renders.
 
-> 📸 **Screenshot needed:** `getting-started/05-comparison-slider.png`
-> _Split-slider comparison of a render vs. the source._
+![Split-slider comparison of a render vs. the source.](/assets/screenshots/getting-started/05-comparison-slider.png)
 
 ## 6. Export
 

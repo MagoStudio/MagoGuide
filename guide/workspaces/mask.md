@@ -26,8 +26,7 @@ Mask-based editing fits when:
 
 ## Points editor
 
-> 📸 **Screenshot needed:** `workspaces/mask-points-editor.png`
-> _Points editor in use._
+![Points editor in use.](/assets/screenshots/workspaces/mask-points-editor.png)
 
 1. Click the **Points** selector to open the editor.
 2. Switch to **Add** mode and click to mark areas *inside* the mask.

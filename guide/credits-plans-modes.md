@@ -79,8 +79,7 @@ Each queue entry shows project, shot, render name, duration, frame range, and cr
 
 > **⚠️ Refunds** — Renders that take multiple hours almost always indicate an error. Contact support to request cancellation, refund, and re-rendering. See [Troubleshooting → render time](/guide/troubleshooting#render-time-issues).
 
-> 📸 **Screenshot needed:** `misc/queue-expanded.png`
-> _Expanded queue showing in-progress / waiting / done states._
+![Expanded queue showing in-progress / waiting / done states.](/assets/screenshots/misc/queue-expanded.png)
 
 ## Billing & payments
 

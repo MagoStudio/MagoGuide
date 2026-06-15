@@ -29,8 +29,7 @@ flowchart TB
 
 ## Top bar
 
-> 📸 **Screenshot needed:** `app-layout/top-bar.png`
-> _Annotated top bar._
+![Annotated top bar.](/assets/screenshots/app-layout/top-bar.png)
 
 - **Mago logo** — returns to the home view from anywhere.
 - **Project name** — the current project. Click to navigate.

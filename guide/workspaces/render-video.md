@@ -6,8 +6,7 @@
 
 Render Video is the main workspace for video-to-video generation. Most production work happens here.
 
-> 📸 **Screenshot needed:** `workspaces/render-video-overview.png`
-> _Render Video workspace, full layout._
+![Render Video workspace, full layout.](/assets/screenshots/workspaces/render-video-overview.png)
 
 ## Layout
 

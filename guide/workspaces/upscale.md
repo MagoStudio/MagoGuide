@@ -6,8 +6,7 @@
 
 The Upscale workspace increases the resolution of existing renders. AI video models often render at lower resolution than the final delivery target (especially for 4K work); Upscale closes that gap.
 
-> 📸 **Screenshot needed:** `workspaces/upscale-overview.png`
-> _Upscale workspace._
+![Upscale workspace.](/assets/screenshots/workspaces/upscale-overview.png)
 
 ## Source selector
 

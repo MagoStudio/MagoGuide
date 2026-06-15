@@ -6,8 +6,7 @@
 
 The Global Timeline is the cross-shot review surface for a project. It shows pinned renders from every shot in sequence, arranged in the order the shots appear in the project.
 
-> 📸 **Screenshot needed:** `workspaces/global-timeline.png`
-> _Global Timeline with several pinned shots._
+![Global Timeline with several pinned shots.](/assets/screenshots/workspaces/global-timeline.png)
 
 ## Purpose
 
