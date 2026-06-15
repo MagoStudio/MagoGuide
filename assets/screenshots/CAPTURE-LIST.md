@@ -16,6 +16,9 @@ Convention in the docs:
 - [x] `getting-started/04-render-video-settings.png` — Render Video settings panel with a keyframe set _(captured; no placeholder in doc yet)_
 - [x] `getting-started/05-comparison-slider.png` — Split-slider comparison of render vs. source
 
+## Projects
+- [x] `projects/shots.jpg` — The shots panel showing multiple shots inside a project
+
 ## Application layout
 - [x] `app-layout/top-bar.png` — Annotated top bar (logo, project, shot, credits, Relaxed, Pricing, Queue, avatar)
 - [ ] `app-layout/workspace-tabs.png` — The five workspace tabs

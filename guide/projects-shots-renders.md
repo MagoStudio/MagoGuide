@@ -23,6 +23,8 @@ flowchart TD
 | **Shot** | Multiple render tracks, all from the same source video | A single shot from the project |
 | **Render (track)** | One generated output | A single render attempt — many per shot |
 
+![The shots panel showing multiple shots inside a project.](/assets/screenshots/projects/shots.jpg)
+
 ## Project operations
 
 - Create a new project from the Projects tab.
