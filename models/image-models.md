@@ -49,7 +49,6 @@ Still available but generally superseded by the models above.
 | --- | --- |
 | Nano Banana | Lighter, faster predecessor to Nano Banana 2 and Pro. |
 | Kontext | Older edit model. CFG range 1.1–15. |
-| MAGO (img2img) | Older Mago-internal style transfer model with ControlNet support. |
 | Seedream | Original default. Still available for compatibility. |
 
 ## Selection guide
