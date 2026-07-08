@@ -7,6 +7,7 @@
 | Term | Meaning |
 | --- | --- |
 | **Project** | A body of work containing multiple shots. A project exists as long as it has at least one Shot — deleting the last Shot also deletes the project. |
+| **Automatic Project Naming** | New projects start named `Untitled` (or `Untitled_NN` when taken). The first video uploaded into a still-default, empty project auto-renames it to the first 10 characters of the video's filename with the extension stripped — e.g. `Project_summer_ep01.mp4` → `Project_su`. Never overrides a user-chosen name, never re-triggers once the project has content, and is skipped during onboarding. |
 | **Shot** | A single editable video segment within a project. The unit of rendering. Displayed as one entry in the shots panel and one row in the project timeline. |
 | **Render** | An output produced from a source video inside a shot. Appears as a render track. |
 | **Track** | A layer attached to a Shot. Two kinds: **Image Track** (the source video) and **Render Track** (a generated output). |
