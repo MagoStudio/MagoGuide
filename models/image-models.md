@@ -6,7 +6,7 @@
 
 Image models edit, stylize, or transform a single frame in the [Modify Frame](/guide/workspaces/modify-frame) workspace. **All current image models accept instruction-based prompts.** The most important habit is including preservation directives.
 
-> **💡 Preservation directives** — For most edits, instruct the model to preserve what should *not* change:
+> **💡 Preservation directives** — For most edits, instruct the model to preserve what should _not_ change:
 > _"Keep the original composition."_ · _"Keep the original outlines."_ · _"Keep the original character intact."_ · _"Do not change the lighting."_ · _"Keep the original framing and proportions."_
 > These work with GPT Image 2, Nano Banana 2, and Nano Banana Pro.
 
@@ -45,22 +45,20 @@ Strong general-purpose image edit and style transfer model.
 
 Still available but generally superseded by the models above.
 
-| Model | Notes |
-| --- | --- |
-| Nano Banana | Lighter, faster predecessor to Nano Banana 2 and Pro. |
-| Kontext | Older edit model. CFG range 1.1–15. |
-| Seedream | Original default. Still available for compatibility. |
+| Model          | Notes                                                             |
+| -------------- | ----------------------------------------------------------------- |
+| Seedream       | Original default. Still available for compatibility.              |
 
 ## Selection guide
 
-| Goal | First choice | Alternative |
-| --- | --- | --- |
-| Precise edit, one element | GPT Image 2 | Nano Banana Pro |
-| Style transfer | GPT Image 2 | Seedream |
-| 4K output | Nano Banana 2 | — |
-| Mask-based edit | GPT Image 2 (mask input) | Mago Inpaint on video |
-| Character preparation for video | GPT Image 2 | Nano Banana 2 |
-| Text-sensitive edit | GPT Image 2 | Nano Banana 2 |
+| Goal                            | First choice             | Alternative           |
+| ------------------------------- | ------------------------ | --------------------- |
+| Precise edit, one element       | GPT Image 2              | Nano Banana Pro       |
+| Style transfer                  | GPT Image 2              | Seedream              |
+| 4K output                       | Nano Banana 2            | —                     |
+| Mask-based edit                 | GPT Image 2 (mask input) | Mago Inpaint on video |
+| Character preparation for video | GPT Image 2              | Nano Banana 2         |
+| Text-sensitive edit             | GPT Image 2              | Nano Banana 2         |
 
 ---
 
