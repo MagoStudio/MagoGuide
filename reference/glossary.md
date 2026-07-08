@@ -18,8 +18,9 @@
 | **Reuse Settings** | Action that loads a track's settings into the Settings panel. |
 | **Project Timeline** | The full sequence of all shots in a project, shown as a horizontal timeline with a playhead, ruler, and zoom controls. Each slot shows the pinned render (or source video if none is pinned). Also called "Global Timeline" in parts of the UI. |
 | **Video Model** | An AI model that generates video (e.g. MagoV3, MagoV4, MagoV5, Seedance, Kling, GPT Image 2, Upscaler). |
-| **Credits mode** | Pay-per-render mode. Each render consumes credits based on frame count, resolution, and the selected model. |
-| **Relaxed mode** | A per-model frame-range cap that unlocks at Pro/Studio tier, allowing renders longer than Basic's limit. Mago models only. Not the same as "unmetered". |
+| **Credits mode** | Pay-per-render mode. Each render consumes credits based on frame count, resolution, and the selected model, with unlimited concurrent renders. The alternative to **Relaxed / Unlimited mode**. |
+| **Relaxed mode** | A rate-limited mode that doesn't spend credits. Provides access to Mago video models and GPT 2 image model. Concurrent renders and maximum number of frames are capped unlike in credits mode. |
+| **Unlimited mode** | Like **Relaxed mode**, but enables all the models and higher usage limits. |
 | **ControlNet** | A conditioning signal (depth, pose, SoftEdge, Canny) that constrains the model's output. |
 | **Context size** | Frames per chunk in long renders. |
 | **Context overlap** | Frames that overlap between adjacent chunks during chunked rendering. |
