@@ -64,7 +64,7 @@ ByteDance model. Powerful general transformation with strong creative range.
 - **Source video reference:** refer to it as `@video1`.
 - **Image references:** up to 9, as `@image1`–`@image9`.
 - **Audio generation:** optional toggle in Advanced — generates sound for the output.
-- **Output resolution:** 720p or 1080p (1080p is significantly more expensive).
+- **Output resolution:** 720p, 1080p, or 4K. 4K renders at 1,875 cr/sec.
 
 > **Example prompts**
 > _"Use @image1 as the new character. Replace the person in @video1 with this character."_
