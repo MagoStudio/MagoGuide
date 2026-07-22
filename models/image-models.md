@@ -8,7 +8,7 @@ Image models edit, stylize, or transform a single frame in the [Modify Frame](/g
 
 > **💡 Preservation directives** — For most edits, instruct the model to preserve what should _not_ change:
 > _"Keep the original composition."_ · _"Keep the original outlines."_ · _"Keep the original character intact."_ · _"Do not change the lighting."_ · _"Keep the original framing and proportions."_
-> These work with GPT Image 2, Nano Banana 2, and Nano Banana Pro.
+> These work with GPT Image 2, Nano Banana 2, Nano Banana Pro, and Seedream 5.0 Pro.
 
 ---
 
@@ -41,20 +41,30 @@ Strong general-purpose image edit and style transfer model.
 - **Image style reference:** optional.
 - **Best for:** higher-resolution outputs, since it supports 4K natively.
 
-## Legacy & specialized image models
+## Seedream 5.0 Pro
 
-Still available but generally superseded by the models above.
+ByteDance image editing model. Strong at stylization and instruction-based transforms.
 
-| Model          | Notes                                                             |
-| -------------- | ----------------------------------------------------------------- |
-| Seedream       | Original default. Still available for compatibility.              |
+- **Cost:** 120 credits per image.
+- **Output:** single image per generation.
+- **Reference images:** up to 9 reference images accepted as style or content guidance.
+- **Availability:** not available in unlimited (relaxed) mode — requires credits.
+- **Prompt enhancement:** automatically enhanced by the backend before sending to the model.
+
+> **Use when** — Style transfer or visual transformation where you want a different aesthetic look while preserving overall composition.
+
+## Legacy & discontinued image models
+
+| Model    | Status       | Notes                                                |
+| -------- | ------------ | ---------------------------------------------------- |
+| Seedream | Discontinued | Replaced by Seedream 5.0 Pro. Existing clips show a disabled reuse button. |
 
 ## Selection guide
 
 | Goal                            | First choice             | Alternative           |
 | ------------------------------- | ------------------------ | --------------------- |
 | Precise edit, one element       | GPT Image 2              | Nano Banana Pro       |
-| Style transfer                  | GPT Image 2              | Seedream              |
+| Style transfer                  | GPT Image 2              | Seedream 5.0 Pro      |
 | 4K output                       | Nano Banana 2            | —                     |
 | Mask-based edit                 | GPT Image 2 (mask input) | Mago Inpaint on video |
 | Character preparation for video | GPT Image 2              | Nano Banana 2         |
