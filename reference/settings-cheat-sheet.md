@@ -10,31 +10,31 @@ Quick lookup of defaults, ranges, and when to change each setting. Full per-mode
 
 Defaults and ranges below reflect the current model configs: universal settings from Mago V5, Character settings from Mago V4, Upscaler settings from the Mago upscaler model.
 
-| Setting                | Default | Range            | When to change                                                        |
-| ---------------------- | ------- | ---------------- | --------------------------------------------------------------------- |
-| Output size            | 1280    | 512–1920         | Lower for testing. Higher for final delivery. 1280 is the sweet spot. |
-| Steps                  | 4       | 4–20             | More for sharper detail (costs more). Lower for rougher styles.       |
+| Setting                | Default | Range            | When to change                                                                                                                                |
+| ---------------------- | ------- | ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Output size            | 1280    | 512–1920         | Lower for testing. Higher for final delivery. 1280 is the sweet spot.                                                                         |
+| Steps                  | 4       | 4–20             | More for sharper detail (costs more). Lower for rougher styles.                                                                               |
 | Interpolation          | Off     | Off/On           | On for cheaper, faster renders. Off for detail-critical work. Exception: **Mago Inpaint defaults to On** (less flicker in the masked region). |
-| Image sequence export  | PNG     | PNG / EXR 16-bit | EXR for professional VFX pipelines.                                   |
-| Prompt influence (CFG) | 1       | 0.5–6            | Lower if the prompt over-influences. Higher if the model ignores it.  |
-| Seed                   | Random  | 0–4294967295     | Fix to reproduce a specific result.                                   |
-| Context size           | 150     | 24–300           | Lower for high movement. Higher for static.                           |
-| Context overlap        | 10      | 0–24             | Lower for high movement. Higher for slow shots.                       |
-| Dynamic reference      | On      | On/Off           | Off only for very static shots.                                       |
-| Start frame buffer     | 1       | 1 or 5           | Increase if flicker appears at render start.                          |
+| Image sequence export  | PNG     | PNG / EXR 16-bit | EXR for professional VFX pipelines.                                                                                                           |
+| Prompt influence (CFG) | 1       | 0.5–6            | Lower if the prompt over-influences. Higher if the model ignores it.                                                                          |
+| Seed                   | Random  | 0–4294967295     | Fix to reproduce a specific result.                                                                                                           |
+| Context size           | 150     | 24–300           | Lower for high movement. Higher for static.                                                                                                   |
+| Context overlap        | 10      | 0–24             | Lower for high movement. Higher for slow shots.                                                                                               |
+| Dynamic reference      | On      | On/Off           | Off only for very static shots.                                                                                                               |
+| Start frame buffer     | 1       | 1 or 5           | Increase if flicker appears at render start.                                                                                                  |
 
 ## Mago Character specific
 
-| Setting              | Default   | When to change                                                 |
-| -------------------- | --------- | -------------------------------------------------------------- |
-| Pose strength        | 1         | Lower for exact tracking. Higher for stylistic freedom.        |
-| Face strength        | 1         | Lower for precise expression replication. Higher for stylized. |
-| Face crop resolution | 512       | 768/1024 for high-res output or eye issues.                    |
-| Face crop padding    | 10        | 10–20 if facial features clipped.                              |
-| Masking threshold    | 0.3       | 0.1–0.2 if detection failing. 0.4–0.6 if too much detected.    |
-| Masking prompt       | character | Multi-subject shots need specifics.                            |
-| Grow mask            | 10        | 15–25 for spiky hair, horns, flowing clothes.                  |
-| Relight              | 1         | Slider 0–1.5. Lower toward 0 to reduce lighting correction; above 1 strengthens it but may affect other aspects.        |
+| Setting              | Default   | When to change                                                                                                   |
+| -------------------- | --------- | ---------------------------------------------------------------------------------------------------------------- |
+| Pose strength        | 1         | Lower for exact tracking. Higher for stylistic freedom.                                                          |
+| Face strength        | 1         | Lower for precise expression replication. Higher for stylized.                                                   |
+| Face crop resolution | 512       | 768/1024 for high-res output or eye issues.                                                                      |
+| Grow face mask       | 50        | 10–20 if facial features clipped.                                                                                |
+| Masking threshold    | 0.3       | 0.1–0.2 if detection failing. 0.4–0.6 if too much detected.                                                      |
+| Masking prompt       | character | Multi-subject shots need specifics.                                                                              |
+| Grow mask            | 10        | 15–25 for spiky hair, horns, flowing clothes.                                                                    |
+| Relight              | 1         | Slider 0–1.5. Lower toward 0 to reduce lighting correction; above 1 strengthens it but may affect other aspects. |
 
 ## Mago Style Transfer specific
 
