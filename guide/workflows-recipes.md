@@ -42,9 +42,9 @@ Complete, step-by-step workflows for common goals.
 5. Switch to Render Video. Pick **Mago Character**.
 6. Confirm the reference image is set.
 7. Configure: Pose strength (lower for exact tracking), Face strength, Masking prompt to identify the character (_"person"_, _"woman in red"_).
-8. If the new character has features beyond the original silhouette (horns, spiky hair, flowing clothes), increase **Grow mask** to 15–25.
+8. If the new character has features beyond the original silhouette (horns, spiky hair, flowing clothes), increase **Grow Mask** to 15–25 (replacement mode).
 9. Test on a small range. Verify face tracking, body tracking, and overall identity.
-10. Adjust Face crop resolution if eyes appear closed; Grow mask if features are clipped.
+10. Increase **Grow face mask** if facial features (eyebrows, chin) are clipped; **Grow Mask** if the silhouette is clipped.
 11. Once satisfied, render the full clip.
 
 > **💡 Alternative for lip sync** — If lip sync is critical, use Kling 3.0 Motion Control instead. Use a Modify Frame reference and leave the prompt empty at first.

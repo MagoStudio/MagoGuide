@@ -19,7 +19,7 @@ Common problems and their fixes, grouped by symptom.
 
 | Symptom | Likely cause | Fix |
 | --- | --- | --- |
-| Flicker at the start of a Style Transfer render | Warm-up too short | Increase Start frame buffer toward 5. |
+| Flicker at the start of a Style Transfer render | Weak stylized first frame | Use a cleaner, higher-contrast stylized first frame; keep Dynamic reference on. |
 | Flicker throughout a long render | Chunking issue | Increase Context overlap. Ensure Dynamic reference is on. |
 | Flicker in Mago Transform with depth ControlNet | Depth ambiguity in low-contrast scenes | Switch to SoftEdge ControlNet for the same shot. |
 
@@ -42,8 +42,8 @@ Common problems and their fixes, grouped by symptom.
 
 | Symptom | Fix |
 | --- | --- |
-| Eyes appear closed | Increase Face crop resolution to 768/1024. Increase Face crop padding. |
-| Eyebrows or forehead clipped | Increase Face crop padding to 10–20. |
+| Eyes appear closed / expression frozen | Increase Grow face mask to include more of the face region. |
+| Eyebrows or forehead clipped | Increase Grow face mask. |
 | Expression doesn't match the source | Lower Face strength. |
 | Face too stylized away from intended look | Raise Face strength. |
 | Lighting doesn't match the scene | Enable Relight. Increase the value if the correction is weak. |

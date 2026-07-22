@@ -35,13 +35,21 @@ Mask-based editing fits when:
 5. Use **Clear All** to start over.
 6. Switch frames if needed — the visual selection is anchored to the chosen frame. (Selection on any frame is being rolled out.)
 
-## Mask refinement
+## Settings
 
-Three settings refine the generated mask:
+| Setting | Tooltip | Default | Range |
+| --- | --- | --- | --- |
+| Invert mask | The white area shows the part that will be changed. Invert to select the background: mask the subject first, then enable Invert. | Disabled | On/Off |
+| Expand mask by | Expands the mask boundary outward by the specified number of pixels. Increase if the mask is cutting off edges of the detected object. | 0 | 0–50 |
+| Blur mask edges | Softens the mask edges by applying a blur. Higher values create smoother, more feathered edges. | 0 | 0–50 |
 
-- **Invert mask** — swap inside and outside. Available under both Prompt and Visual selection modes. Useful when masking an element to *keep* while changing everything else.
-- **Expand mask** — grow the mask outward by N pixels. Useful when too tight (visible seams), or for character replacement where the new character extends beyond the original silhouette.
-- **Blur mask** — soften edges for smoother transitions.
+#### Invert mask — example
+
+| Prompt: Person | Inverted mask (background selected) |
+| --- | --- |
+| ![Mask result with person selected](/assets/screenshots/workspaces/mask/invert-mask-normal.png) | ![Inverted mask with background selected](/assets/screenshots/workspaces/mask/invert-mask-inverted.png) |
+
+The white area is what gets edited. To change the background while leaving the subject intact: mask the subject with a prompt, then enable **Invert mask**.
 
 ## Mask tracks
 

@@ -51,10 +51,10 @@ Most Render Video models share a similar layout, though specifics vary.
 | **Steps** | Inference depth. More steps = sharper, more detailed, slower, costlier. |
 | **Interpolation** | Renders every other frame and interpolates. Cheaper/faster but may miss fine detail. |
 | **Image sequence export** | PNG or EXR 16-bit. EXR is for [VFX pipelines](/guide/export-and-compositing#exr-for-vfx-pipelines) (Mago Transform & Style Transfer). |
-| **Prompt influence (CFG)** | How closely the model follows the prompt. |
+| **Prompt strength** | How closely the model follows the prompt. |
 | **Color consistency** | Controls color stability across frames. |
 | **Seed** | Same seed + same settings = same output. Useful for reproducibility. |
-| **Shift / low step accelerator** | Trades fewer steps for slight color drift; speeds up exploration. |
+| **Shift / Accelerator** | Trades fewer steps for slight color drift; speeds up exploration. |
 
 ### Context settings (Mago models, long renders)
 
@@ -64,7 +64,6 @@ Long renders are split into chunks; these control the chunking.
 | --- | --- | --- |
 | **Context size** | 150 | Frames per chunk. |
 | **Context overlap** | — | Frames overlapping between chunks. Lower for high movement, higher for static/slow. |
-| **Start frame buffer** | 1 | Warm-up frames at the start to prevent flicker. |
 | **Dynamic reference** | On | Regenerates a reference between chunks. On by default for high-movement video; disable for very static shots needing maximum consistency. |
 
 ## Generate buttons

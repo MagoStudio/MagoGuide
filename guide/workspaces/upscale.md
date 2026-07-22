@@ -28,11 +28,11 @@ Full detail: [Upscale models catalog](/models/upscale-models).
 
 ## Creative Upscaler — the key setting
 
-The most important Creative Upscaler setting is **Denoise**:
+The most important Creative Upscaler setting is **Detail enhancement** (0.1–0.9, default 0.4):
 
-- **0.3** — light reconstruction. Small detail boost without disturbing the original much. Safe default.
+- **0.3** — light reconstruction. Small detail boost without disturbing the original much.
 - **0.5–0.6** — moderate. Adds visible detail.
-- **0.7–0.8** — heavy reconstruction. For restoring damaged, blurry, or low-res input. Output deviates noticeably from the source.
+- **0.7–0.9** — heavy reconstruction. For restoring damaged, blurry, or low-res input. Output deviates noticeably from the source.
 
 ## When to upscale
 
