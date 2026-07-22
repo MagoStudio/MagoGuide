@@ -46,7 +46,7 @@ Defaults and ranges below reflect the current model configs: universal settings 
 
 | Setting                   | Range             | When to use                                                                   |
 | ------------------------- | ----------------- | ----------------------------------------------------------------------------- |
-| Denoise                   | 0.1–0.9           | 0.3 light detail · 0.5 moderate · 0.7–0.8 heavy restoration of damaged input. |
+| Detail enhancement (Denoise) | 0.1–0.9        | 0.3 light detail · 0.5 moderate · 0.7–0.8 heavy restoration of damaged input. |
 | Tile width / height count | Higher for detail | Risk of visible tiling at high counts.                                        |
 
 ---
