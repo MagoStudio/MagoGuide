@@ -119,22 +119,12 @@ The draw-your-own-mask UI is available to all users on **Seedream 5.0 Pro** (mov
 | Frame mismatch warning        | The mask was drawn on a different frame. The masked area may not match the current frame. Consider resetting and redrawing. |
 | Save gate                     | Save your mask to continue                                                                                                 |
 
-## Img2Img — Qwen / Qwen CR
+## Img2Img — Qwen Image Edit +
 
-| Element                                 | Tooltip text                                                                                                                                                                                        |
-| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Prompt (qwen)                           | Give direct instructions as if you were talking to an artist. For example: change the weather to rain and remove the character                                                                      |
-| Character image (qwen CR)               | Upload the character you want to use for pose transfer                                                                                                                                              |
-| Segment character mask prompt (qwen CR) | Most of the times "character" works well. If it's not the case, you will need to describe more precisely the new character you want to insert, including their accessories.                         |
-| Grow mask — segment character           | Increase the mask size used to isolate the new character from its source image. This helps include accessories or elements that extend beyond the main shape, like weapons, unique hairstyles, etc. |
-| Erase character mask prompt (qwen CR)   | Most of the times "character" works well. If it's not the case, you will need to describe more precisely the existing person you want to replace, including their accessories.                      |
-| Grow mask — erase source                | Increase the mask size used to isolate the person from the video frame. This helps include accessories or elements that extend beyond the main shape, like weapons, unique hairstyles, etc.         |
-
-## Img2Img — Seedream
-
-| Element | Tooltip text                                                                                                            |
-| ------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Prompt  | Give instructions as if you were talking to an artist. For example: change the weather to rain and remove the character |
+| Element              | Tooltip text                                                                                                                  |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Prompt                | Give direct instructions as if you were talking to an artist. For example: change the weather to rain and remove the character |
+| Image style reference | You can use up to nine images to provide more context for the style                                                          |
 
 ## Masking
 

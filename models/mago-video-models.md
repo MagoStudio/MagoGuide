@@ -88,6 +88,7 @@ Mago Transform expects **descriptive** prompts. Describe what the output looks l
 | --- | --- | --- | --- |
 | Output size | Size of the longest side of your target output resolution. Lower resolutions will give faster and cheaper results, at the expense of quality. | 1280 | 512–1920 |
 | Steps | Total number of diffusion steps. More steps give sharper, more detailed results, but take longer to render; very high values can over-sharpen the image or push colors too far. | 4 | 4–20 |
+| Level of detail | Controls the level of detail of the generation. A higher number will help render finer details and textures. | 40 | 20–80 |
 | Video input strength | The higher the value, the higher the fidelity to the original input video will be (shape, facial expressions, lip-sync, outlines, etc.). | 0.5 | 0.3–1 |
 | Interpolation | Renders every other frame and fills in the rest. Cuts render time and allows larger context size, at the cost of quality in some cases. | Off | On/Off |
 | Image sequence export | Output format for the render as an image sequence. | PNG | PNG / EXR 16-bit |

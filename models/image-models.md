@@ -54,6 +54,16 @@ ByteDance image editing model. Strong at stylization and instruction-based trans
 
 > **Use when** — Style transfer or visual transformation where you want a different aesthetic look while preserving overall composition.
 
+## Qwen Image Edit +
+
+Alibaba image editing model.
+
+- **Prompting:** instruction-based.
+- **Reference images:** up to 9, providing style/content context.
+- **Availability:** not available in unlimited (relaxed) mode — requires credits.
+
+> **Use when** — General instruction-based edits or stylization, similar territory to Seedream 5.0 Pro.
+
 ## Legacy & discontinued image models
 
 | Model    | Status       | Notes                                                |

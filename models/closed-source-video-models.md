@@ -31,8 +31,8 @@ Closed-source models are third-party models integrated into Mago. They share sev
 General-purpose video transformation from Kuaishou.
 
 - **Prompting:** instruction-based. E.g. _"remove the crowd"_, _"change time of day to midnight"_.
-- **Image references:** attach reference images, refer to them in the prompt as `@image1`, `@image2`, etc.
-- **Elements:** attach an Element consisting of multiple angles of the same character or object — useful for character continuity.
+- **Image references:** attach up to two reference images, refer to them in the prompt as `@image1` and `@image2`.
+- **Elements:** attach an Element — a fixed pair of angles (main + secondary) of the same character or object, referenced in the prompt as `@Element1` — useful for character continuity.
 
 > **Example prompts**
 > _"Replace the couch with the couch from @image1."_
@@ -54,7 +54,7 @@ Character-replacement specialist. Strong at lip sync and facial expression prese
 
 ## Kling 3.0 Motion Control
 
-Like 2.6 Motion Control but supports **Elements** with multiple character angles. Use when you have multiple reference views of the same character (front, side, back) and want consistent identity across the shot.
+Like 2.6 Motion Control but supports **Elements** — a two-angle reference pair (main + secondary) for the same character. Use when you have two reference views of the same character and want more consistent identity across the shot.
 
 ## Seedance 2.0
 
