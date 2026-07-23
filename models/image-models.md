@@ -50,6 +50,7 @@ ByteDance image editing model. Strong at stylization and instruction-based trans
 - **Reference images:** up to 9 reference images accepted as style or content guidance.
 - **Availability:** not available in unlimited (relaxed) mode — requires credits.
 - **Prompt enhancement:** automatically enhanced by the backend before sending to the model.
+- **Drawn mask:** paint a red mask by hand on the frame (from a video source) to limit the edit to a specific region. Available to all users. Tip: include "in the red area" in your prompt.
 
 > **Use when** — Style transfer or visual transformation where you want a different aesthetic look while preserving overall composition.
 

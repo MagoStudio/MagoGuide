@@ -106,9 +106,9 @@
 | Quality    | Result size is 2K. Quality settings will not change output size but will impact the level of detail of the output. Set to High if you need precise details (such as small text, etc.) |
 | Mask image | Add your frame with the area you want to edit painted in black. It will be used as the mask reference.                                                                                |
 
-### Drawn Mask (team-only)
+### Drawn Mask (Seedream 5.0 Pro)
 
-The draw-your-own-mask UI is visible to Mago team members only; public users see the "Mask image" upload field above instead.
+The draw-your-own-mask UI is available to all users on **Seedream 5.0 Pro** (moved off GPT Image 2 in MAG-4410). GPT Image 2 keeps its separate "Mask image" upload field above.
 
 | Element                       | Text                                                                                                                       |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------- |

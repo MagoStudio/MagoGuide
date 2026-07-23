@@ -35,7 +35,7 @@
 | **Masking** | A workflow that produces a black-and-white mask video using the SAM3 Mask model, to feed into Inpainting. |
 | **Inpainting** | A video model (product label: **Mago Inpaint**) that edits only the region defined by a mask video. |
 | **Element / Element Pair** | A reference object used by the element-swap Kling models (Kling O1 Pro, Kling 3.0 Motion Control, Kling O3 Pro). Supports two angles: a main reference image and an optional frontal image. |
-| **Drawn Mask** _(coming soon)_ | A red mask painted by hand with a brush on a single video frame inside **Modify Frame**, telling **GPT Image 2** which region to edit. Distinct from **Masking** (the SAM3 mask _video_ used by Inpainting). Until this feature is available, use the "Mask image" upload field instead. |
+| **Drawn Mask** | A red mask painted by hand with a brush on a single video frame inside **Modify Frame**, telling **Seedream 5.0 Pro** which region to edit. Available to all users on Seedream 5.0 Pro. Distinct from **Masking** (the SAM3 mask _video_ used by Inpainting). GPT Image 2 keeps its separate "Mask image" upload field. |
 | **Reference Frame** | An image input that acts as a style or content reference for a render. Order-independent — multiple reference frames can be added. |
 | **Key Frame** | An image input anchored to a specific frame index in the output, guiding the model at that exact point. |
 | **Preset** | Quick-start configuration that sets a model and baseline settings. |

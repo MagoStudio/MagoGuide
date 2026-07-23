@@ -41,6 +41,7 @@ Defaults and ranges below reflect the current model configs: universal settings 
 | Setting              | Default | When to change                                                |
 | -------------------- | ------- | ------------------------------------------------------------- |
 | Video input strength | 0.5     | Below 0.5 for shots over 80 frames. Higher to lock to source. |
+| Level of detail      | 40%     | Range 20–80%. Higher renders finer details and textures.      |
 
 ## Creative Upscaler specific
 
