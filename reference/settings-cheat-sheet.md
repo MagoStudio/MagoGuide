@@ -17,7 +17,7 @@ Defaults and ranges below reflect the current model configs: universal settings 
 | Interpolation          | Off     | Off/On           | On for cheaper, faster renders. Off for detail-critical work. Exception: **Mago Inpaint defaults to On** (less flicker in the masked region). |
 | Image sequence export  | PNG     | PNG / EXR 16-bit | EXR for professional VFX pipelines.                                   |
 | Prompt strength        | 1       | 0.5–6            | Lower if the prompt over-influences. Higher if the model ignores it.  |
-| Seed                   | Random  | 0–4294967295     | Fix to reproduce a specific result.                                   |
+| Seed                   | 42      | 0–4294967295     | Fix to reproduce a specific result.                                   |
 | Context size           | 150     | 24–300           | Lower for high movement. Higher for static.                           |
 | Context overlap        | 10      | 0–24             | Lower for high movement. Higher for slow shots.                       |
 | Dynamic reference      | On      | On/Off           | Off only for very static shots.                                       |
