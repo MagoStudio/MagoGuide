@@ -20,6 +20,7 @@ Mago video models are built on Mago's own architecture, leveraging open-source f
 | [Mago Style Transfer](#mago-style-transfer) | Conforming stylization | You must preserve performance / lip sync while restyling |
 | [Mago Character](#mago-character) | Character replacement | You're swapping the character in a shot |
 | [Mago Inpaint](#mago-inpaint) | Localized edits | You're editing one masked region |
+| [Mago Clean Plate](#mago-clean-plate) | Background removal / reconstruction | You need a clean background plate or want to remove lens artifacts |
 
 ---
 
@@ -218,6 +219,45 @@ Mago Inpaint (like most video models) doesn't operate in pure pixel space — un
 3. In Nuke, After Effects, or Fusion, composite the inpainted result onto the original source using the downloaded mask.
 
 This guarantees unmasked pixels are identical to the source. See [Export & compositing](/guide/export-and-compositing).
+
+---
+
+## Mago Clean Plate
+
+**Type: background removal and reconstruction.** Uses LTX 2.3 with IC-LoRA conditioning via a tiled workflow to reconstruct the background behind subjects, producing clean plate output suitable for compositing. Supports output up to 4K. Choose from four LoRA variants depending on the task.
+
+### Inputs
+
+| Input | Description |
+| --- | --- |
+| Source video | The video to process. Required. |
+| Prompt | Optional description of the desired empty scene — guides what the model reconstructs behind the subject. |
+| Negative prompt | Optional — what to exclude from the reconstruction. |
+
+### Settings
+
+| Setting | Default | Description |
+| --- | --- | --- |
+| Max size | 4096 | Maximum output resolution (longest side, in pixels). |
+| FPS | 0 (keep source) | Output frame rate. `0` preserves the source frame rate. |
+| LoRA | Clean plate | Which IC-LoRA variant to apply. See table below. |
+
+### LoRA variants
+
+| Option | Use when |
+| --- | --- |
+| **Clean plate** | Removing subjects to produce an empty background plate for compositing (default). |
+| **Deblur** | Sharpening motion-blurred footage. |
+| **Cross-view** | Synthesizing a novel viewpoint from the source footage. |
+| **Obscura removal** | Removing lens artifacts or obscura distortions from the frame. |
+
+### Prompting
+
+Describe what the background should look like once the subject is removed — not what to do.
+
+> **Example**
+> ❌ _"Remove the person and show the background."_
+> ✅ _"An empty cobblestone street with overcast sky, soft afternoon light, no people."_
 
 ---
 

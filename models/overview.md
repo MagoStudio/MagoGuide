@@ -21,7 +21,7 @@ See the [Prompting guide](/guide/prompting-guide) for why prompt style matters s
 
 | Page | Models |
 | --- | --- |
-| [Mago video models](/models/mago-video-models) | Mago Transform · Mago Style Transfer · Mago Character · Mago Inpaint |
+| [Mago video models](/models/mago-video-models) | Mago Transform · Mago Style Transfer · Mago Character · Mago Inpaint · Mago Clean Plate |
 | [Closed-source video models](/models/closed-source-video-models) | Kling 01 / 03 Pro · Kling 2.6 / 3.0 Motion Control · Seedance 2.0 · Happy Horse |
 | [Image models](/models/image-models) | GPT Image 2 · Nano Banana Pro · Nano Banana 2 · legacy models |
 | [Upscale models](/models/upscale-models) | Upscaler · Creative Upscaler |
@@ -36,6 +36,7 @@ Quick reference (full version with alternatives in [the settings cheat sheet](/r
 | Restyle while preserving lip sync | Mago Style Transfer | Kling 3.0 Motion Control |
 | Replace a character | Mago Character | Kling 3.0 Motion Control |
 | Edit a specific element | Mago Inpaint | Happy Horse |
+| Remove or reconstruct background | Mago Clean Plate | — |
 | Quick VFX, no precision needs | Happy Horse, Seedance 2.0 | Kling 03 Pro |
 | Edit a single image | GPT Image 2 | Nano Banana 2 |
 | Clean upscale | Upscaler | Creative Upscaler (low denoise) |
