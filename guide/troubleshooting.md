@@ -37,6 +37,7 @@ Common problems and their fixes, grouped by symptom.
 | --- | --- | --- |
 | Mask too tight, visible seams in render | Mask too conservative | Increase Expand by 5–10 px. Increase Blur. |
 | Pixel shift in unmasked regions of an inpaint result | Compression in video models, not a bug | Download the mask. [Composite externally](/guide/export-and-compositing#mask-export) for pixel-perfect preservation. |
+| Full-range Mago Inpaint render fails with a frame-count error | Source video has a variable/odd frame rate; the mask and source video decode to different frame counts | Re-export the source at a fixed frame rate before uploading, or trim to a whole-second range. Contact support if it persists. |
 
 ## Face issues (Mago Character)
 
