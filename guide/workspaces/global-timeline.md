@@ -25,6 +25,10 @@ Mago is designed around long-form projects — many users work on sequences of d
 4. Review the sequence. If a shot looks inconsistent, return to its shot view, generate a new render, and update the pin.
 5. Iterate until the sequence is internally consistent.
 
+## Generate with AI (prototype)
+
+Click **Add** at the end of the timeline and choose **Generate with AI** to open an image-to-video window. It generates a clip from a start image (and an optional end image) with Seedance 2.0 Image-to-Video — see [Closed-source video models](/models/closed-source-video-models#seedance-20-image-to-video). The window is labelled as a prototype feature and might be unstable.
+
 ## As a preview before export
 
 The Global Timeline is the recommended final preview before exporting individual shots for an external editing or compositing pipeline. Catching inconsistencies here is cheaper than discovering them in a finishing tool.

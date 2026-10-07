@@ -21,7 +21,7 @@ flowchart TB
 
 | Surface | Location | Purpose |
 | --- | --- | --- |
-| **Top bar** | Top of screen | Project navigation, share, credit balance, mode toggle, pricing, queue, account menu |
+| **Top bar** | Top of screen | Project navigation, share, credit balance, Relaxed/Unlimited toggle, pricing, queue, account menu |
 | **Workspace tabs** | Below the top bar | Switch between the five workspaces |
 | **Left panel** | Left side | Settings for the next render, and Render Info for inspecting any track |
 | **Viewport** | Center | Video preview, comparison views, frame navigation, zoom, downloads |
@@ -35,7 +35,7 @@ flowchart TB
 - **Project name** — the current project. Click to navigate.
 - **Shot name** — the current shot. Click for the shot list; the ℹ️ icon opens [shot statistics](/guide/projects-shots-renders#project-statistics).
 - **Credit balance** — real-time available credits. Updates after each render.
-- **Relaxed toggle** — switches between Credits mode and [Relaxed mode](/guide/credits-plans-modes#relaxed-mode). Greyed out on the Free plan.
+- **Relaxed / Unlimited toggle** — switches between Credits mode and the [Relaxed or Unlimited mode](/guide/credits-plans-modes#relaxed-mode) of your plan (labelled Relaxed on Pro, Unlimited on Studio). Only shown when your plan includes one; a usage wheel next to it shows your daily usage as a percentage.
 - **Pricing** — opens the plans and credit packs page.
 - **Queue** — counter of in-progress and waiting jobs. Click to expand the [full queue](/guide/credits-plans-modes#the-queue).
 - **Account avatar** — account menu (settings, billing, support).

@@ -44,7 +44,7 @@ Image models are detailed in the [Image models catalog](/models/image-models). Q
 
 - **GPT Image 2** — best precision for editing. Respects original content closely. Supports a mask image for region-specific edits.
 - **Nano Banana Pro** — strong general-purpose results. Good default when unsure.
-- **Nano Banana 2** — fast, supports 4K output.
+- **Nano Banana 2** — supports up to 4K output.
 
 ## Prompting
 

@@ -11,7 +11,7 @@ Mago video models are built on Mago's own architecture, leveraging open-source f
 - **Frame-perfect** — N input frames produce N output frames, each corresponding to a specific source frame.
 - **Descriptive prompts** — describe the desired result; do not write instructions. ([Why?](/guide/prompting-guide))
 - **Settings-rich** — more controls than closed-source alternatives. Harder to learn, more powerful once learned.
-- **Available in Relaxed mode** — unmetered usage subject to [plan limits](/guide/credits-plans-modes#relaxed-mode).
+- **Availability** — available in Relaxed mode (Pro) and Unlimited mode (Studio), subject to [plan limits](/guide/credits-plans-modes#relaxed-mode).
 - **Confidential** — not used to train models. Project data stays private.
 
 | Model | Type | Use it when… |
@@ -20,6 +20,7 @@ Mago video models are built on Mago's own architecture, leveraging open-source f
 | [Mago Style Transfer](#mago-style-transfer) | Conforming stylization | You must preserve performance / lip sync while restyling |
 | [Mago Character](#mago-character) | Character replacement | You're swapping the character in a shot |
 | [Mago Inpaint](#mago-inpaint) | Localized edits | You're editing one masked region |
+| [Mago Clean Plate](#mago-clean-plate) | Subject removal | You need the empty background behind a subject |
 
 ---
 
@@ -47,7 +48,7 @@ ControlNets are conditioning signals that constrain how far the model can deviat
 | Output size | Size of the longest side of your target output resolution. Lower resolutions will give faster and cheaper results, at the expense of quality. | 1280 | 512–1620 |
 | Steps | Total number of diffusion steps. More steps give sharper, more detailed results, but take longer to render; very high values can over-sharpen the image or push colors too far. | 4 | 4–10 |
 | Interpolation | Renders every other frame and fills in the rest. Cuts render time and allows larger context size, at the cost of quality in some cases. | Off | On/Off |
-| Image sequence export | Output format for the render as an image sequence. | PNG | PNG / EXR 16-bit |
+| Images format | Output format for the render as an image sequence. | PNG | PNG / EXR 16-bit |
 | Context size | When doing long renders, the render is split in smaller parts and attached together. The Context size is the number of frames of those parts. | 120 | 24–160 |
 | Context overlap | Number of frames where a render part overlaps with the next one. Small values work best for high movement while higher value is better for more static/slow movement. | 4 | 0–24 |
 | Dynamic reference | When enabled, a new reference image is generated between render parts, which allows for better transitions for high movement videos. For static/slow movement videos, disabling it ensures better consistency. | Off | On/Off |
@@ -61,11 +62,11 @@ ControlNets are conditioning signals that constrain how far the model can deviat
 
 | Setting | Tooltip | Default | Range |
 | --- | --- | --- | --- |
-| Control map selection | Determines what information is extracted from the input video and used to guide the render. Pose follows body movement; Depth captures 3D space; Normal Map captures surface detail; SoftEdge preserves contours. Combined modes apply two maps at once for stronger control, at the cost of longer preprocessing. | Depth | Depth / Normal Map (beta) / Pose / SoftEdge (beta) / Pose+Depth |
-| ControlNet resolution | Resolution used for controlnet maps. Higher resolutions include more details. | 1280 | 512–1280 (Normal Map 512–768) |
-| ControlNet strength | How strongly the control map guides the generation. Lower values give the model more creative freedom; higher values keep the output closer to the input control map information. | 1 | 0.1–1.5 |
-| Pose strength (Pose+Depth only) | Controls the strength of video attention consistency enforcement. Higher values provide more temporal consistency. | 0.5 | 0.1–1.5 |
-| Facemesh | Enables higher fidelity of face expressions and lip-sync. | Off | On/Off |
+| ControlNet type | Determines what information is extracted from the input video and used to guide the render. Pose follows body movement; Depth captures 3D space; Normal Map captures surface detail; SoftEdge preserves contours. Combined modes (Pose+Depth, SoftEdge+Normal) apply two maps at once for stronger control, at the cost of longer preprocessing. | Depth | Depth / Normal Map (beta) / Pose / SoftEdge (beta) / Pose+Depth |
+| Resolution | Resolution used for controlnet maps. Higher resolutions include more details. | 1280 | 512–1280 (Normal Map 512–768) |
+| Strength | How strongly the control map guides the generation. Lower values give the model more creative freedom; higher values keep the output closer to the input control map information. | 1 (0.5 for Pose+Depth) | 0.1–1.5 (0–1.5 for Pose+Depth) |
+| Pose Strength (Pose+Depth only) | Controls the strength of video attention consistency enforcement. Higher values provide more temporal consistency. | 0.5 | 0.1–1.5 |
+| Facemesh | Enables higher fidelity of face expressions and lip-sync | Off | On/Off |
 | Input video is a control map | Enable this option if the video you uploaded is a control map. It will then be used directly as the source control map for the generation. | Off | On/Off |
 
 ### Prompting
@@ -86,13 +87,13 @@ Mago Transform expects **descriptive** prompts. Describe what the output looks l
 
 | Setting | Tooltip | Default | Range |
 | --- | --- | --- | --- |
-| Output size | Size of the longest side of your target output resolution. Lower resolutions will give faster and cheaper results, at the expense of quality. | 1280 | 512–1920 |
+| Output size | Size of the longest side of your target output resolution. Lower resolutions will give faster and cheaper results, at the expense of quality | 1280 | 512–3840 |
 | Steps | Total number of diffusion steps. More steps give sharper, more detailed results, but take longer to render; very high values can over-sharpen the image or push colors too far. | 4 | 4–20 |
-| Level of detail | Controls the level of detail of the generation. A higher number will help render finer details and textures. | 40 | 20–80 |
+| Level of details | Controls the level of detail of the generation. A higher number will help render finer details and textures | 40 | 20–80 |
 | Video input strength | The higher the value, the higher the fidelity to the original input video will be (shape, facial expressions, lip-sync, outlines, etc.). | 0.5 | 0.3–1 |
 | Interpolation | Renders every other frame and fills in the rest. Cuts render time and allows larger context size, at the cost of quality in some cases. | Off | On/Off |
-| Image sequence export | Output format for the render as an image sequence. | PNG | PNG / EXR 16-bit |
-| Context size | When doing long renders, the render is split in smaller parts and attached together. The Context size is the number of frames of those parts. | 150 | 24–300 |
+| Images format | Output format for the render as an image sequence. | PNG | PNG / EXR 16-bit |
+| Context size | When doing long renders, the render is split in smaller parts and attached together. The Context size is the number of frames of those parts. | 300 | 24–600 |
 | Context overlap | Number of frames where a render part overlaps with the next one. Small values work best for high movement while higher value is better for more static/slow movement. | 10 | 0–24 |
 | Dynamic reference | When enabled, a new reference image is generated between render parts, which allows for better transitions for high movement videos. For static/slow movement videos, disabling it ensures better consistency. | On | On/Off |
 | Prompt strength | Higher values will enforce more strongly the prompt instructions. A value too high might result in visual artifacts. | 1 | 0.5–6 |
@@ -127,7 +128,7 @@ More: [Troubleshooting](/guide/troubleshooting).
 
 > **🧪 Recommended pre-step** — Go through [Modify Frame](/guide/workspaces/modify-frame) first. Generate a reference closely matching the source pose using GPT Image 2 or Nano Banana Pro, then use that frame as the Mago Character reference. Dramatically more controllable than a generic reference.
 
-Two modes, switched by the **Use image background** toggle: **off** = replace the character while keeping the original background (v4.0); **on** = also bring in the reference image's background (v4.1). The **masking settings** below appear only in replacement mode (Use image background off).
+Two modes, switched by the **Use image background** toggle: **off** = replace the character while keeping the original background; **on** = also bring in the reference image's background. The **masking settings** below appear only in replacement mode (Use image background off).
 
 ### Settings
 
@@ -137,7 +138,7 @@ Two modes, switched by the **Use image background** toggle: **off** = replace th
 | Output size | Size of the longest side of your target output resolution. Lower resolutions will give faster and cheaper results, at the expense of quality. | 1280 | 512–1620 |
 | Steps | Total number of diffusion steps. More steps give sharper, more detailed results, but take longer to render; very high values can over-sharpen the image or push colors too far. | 5 | 4–30 |
 | Interpolation | Renders every other frame and fills in the rest. Cuts render time and allows larger context size, at the cost of quality in some cases. | Off | On/Off |
-| Image sequence export | Output format for the render as an image sequence. | PNG | PNG / EXR 16-bit |
+| Images format | Output format for the render as an image sequence. | PNG | PNG / EXR 16-bit |
 | Pose strength | Defines how strongly the original character pose is used in the final output. A value too high might create artefacts. | 1 | 0.5–1.5 |
 | Face strength | Defines how strongly the original character facial expressions are used in the final output. A value too high might generate a stiffer face. | 1 | 0.5–1.5 |
 | Grow face mask | Margin around the face area added to the face detection to include potentially overlapping facial features of the input video character (big eyebrows, long chin, etc.). | 50 | 0–200 |
@@ -183,24 +184,24 @@ Two modes, switched by the **Use image background** toggle: **off** = replace th
 
 | Setting | Tooltip | Default | Range |
 | --- | --- | --- | --- |
-| Invert Mask | When enabled, the mask is inverted so the masked area becomes unmasked and vice versa. | Off | On/Off |
-| Expand mask by | Grow the mask outward by this value (px) in all directions. | 0 | 0–50 |
-| Blur mask | Blur the mask border, softening the transition between the edited and preserved regions. | 0 | 0–50 |
+| Invert | When enabled, the mask is inverted so the masked area becomes unmasked and vice versa. | Off | On/Off |
+| Expand by | Expands the mask boundary outward by the specified number of pixels. Increase if the mask is cutting off edges of the detected object. | 0 | 0–50 |
+| Blur edges | Softens the mask edges by applying a blur. Higher values create smoother, more feathered edges. | 0 | 0–50 |
 
 ### Advanced settings
 
 | Setting | Tooltip | Default | Range |
 | --- | --- | --- | --- |
 | Steps | Total diffusion steps: more steps result in sharper and more detailed results but slower processing. | 6 | 4–20 |
-| Level of detail | Controls the level of detail of the generation. A higher number will help render finer details and textures. | 40 | 20–80 |
-| Interpolation | The interpolation mode renders only one every two frames and uses interpolation to fill in the gaps. Quicker, costs less credits, and might be less flickery. The output might be less detailed on occasion. | On | On/Off |
-| Context size | When doing long renders, the render is split in smaller parts and attached together. The Context size is the number of frames of those parts. | 80 | 80–100 |
-| Context overlap | Number of frames where a render part overlaps with the next one. Small values work best for high movement while higher value is better for more static/slow movement. | 1 | 1–24 |
-| Dynamic reference | When enabled, a new reference image is generated between render parts, which allows for better transitions for high movement videos. For static/slow movement videos, disabling it ensures better consistency. | On | On/Off |
-| Prompt strength | The CFG is the prompt strength. Higher values will enforce more strongly the prompt instructions. A value too high might result in visual artefacts. | 1 | 0.5–6 |
-| Color consistency | Tints the render so its colors match a reference image. Useful for keeping a consistent look across shots. | 0 | 0–1 |
+| Level of details | Controls the level of detail of the generation. A higher number will help render finer details and textures | 40 | 20–80 |
+| Interpolation | The interpolation mode renders only one every two frames and use interpolation to fill in the gaps. As a result, the render is quicker, costs less credits and might be less flickery. The output might be less detailed in occasions. | On | On/Off |
+| Context size | When doing long renders, the render is split in smaller parts and attached together. The Context size is the number of frames of those parts | 80 | 80–100 |
+| Context overlap | Number of frames where a render part overlaps with the next one. Small values work best for high movement while higher value is better for more static/slow movement | 1 | 1–24 |
+| Dynamic reference | When enabled, a new reference image is generated between render parts, which allows for better transitions for high movement videos. For static/slow movement videos, disabling it ensure better consistency | On | On/Off |
+| Prompt strength | The CFG is the prompt strength. Higher values will enforce more strongly the prompt instructions. A value too high might result in visual artefacts | 1 | 0.5–6 |
+| Color consistency | — | 0 | 0–1 |
 | Shift | Controls the frame shift amount for temporal alignment. Higher values increase the search range for matching features. | 5 | 1–10 |
-| Image sequence export | Choose the format for the image sequence export. EXR formats provide higher quality for professional compositing workflows. | PNG | PNG / EXR 16-bit |
+| Images format | Choose the format for the image sequence export. EXR formats provide higher quality for professional compositing workflows. | PNG | PNG / EXR 16-bit |
 
 ### Prompting
 
@@ -218,6 +219,28 @@ Mago Inpaint (like most video models) doesn't operate in pure pixel space — un
 3. In Nuke, After Effects, or Fusion, composite the inpainted result onto the original source using the downloaded mask.
 
 This guarantees unmasked pixels are identical to the source. See [Export & compositing](/guide/export-and-compositing).
+
+---
+
+## Mago Clean Plate
+
+Removes subjects and reconstructs the empty background behind them. Sits directly after Mago Inpaint under **Transformation (VFX)** in the Render video tool.
+
+### Settings
+
+| Setting | Tooltip | Default | Range |
+| --- | --- | --- | --- |
+| Model variant | Choose which processing variant to use for this render | Clean plate | Clean plate / Deblur / Cross-view / Obscura removal |
+| Prompt | Describe the empty background you want reconstructed once the subjects are removed | A clean-plate description is pre-filled | Free text |
+| Output size | Size of the longest side of your target output resolution. Lower resolutions will give faster and cheaper results, at the expense of quality | 1280 | 512–1920 |
+| Context size | When doing long renders, the render is split in smaller parts and attached together. The Context size is the number of frames of those parts | 81 | 24–81 |
+| Context overlap | Number of frames where a render part overlaps with the next one. Small values work best for high movement while higher value is better for more static/slow movement | 1 | 0–24 |
+
+Render length runs from 8 to 2000 frames. Available in Relaxed and Unlimited modes.
+
+### Prompting
+
+The default prompt already asks for an empty plate with no people, body parts, cast shadows or reflections. Edit it only when the background you want differs from the scene as shot.
 
 ---
 

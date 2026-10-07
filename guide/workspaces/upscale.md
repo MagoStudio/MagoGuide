@@ -17,7 +17,7 @@ Pick any video or render in the shot. To upscale a specific render in one step:
 3. Pick an upscale model.
 4. Click **Generate full clip**.
 
-## The two upscale models
+## The upscale models
 
 Full detail: [Upscale models catalog](/models/upscale-models).
 
@@ -25,6 +25,7 @@ Full detail: [Upscale models catalog](/models/upscale-models).
 | --- | --- | --- |
 | **Upscaler** | Simple, non-creative enlargement. One setting: ×2 or ×4. | Final-pass output prep. Predictable. Use when the input is already what you want, just the wrong size. |
 | **Creative Upscaler** | Partially reconstructs while upscaling. Adds detail, fixes artifacts. Many settings. | Recovering low-res input, removing artifacts, restoration work. |
+| **Mago SDR-to-HDR** | Expands brightness and colour range for HDR displays. Does not add detail. Output is a 16-bit EXR image sequence. | Grades that need HDR headroom. |
 
 ## Creative Upscaler — the key setting
 

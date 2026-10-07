@@ -55,7 +55,7 @@ Common problems and their fixes, grouped by symptom.
 | --- | --- |
 | Render taking many hours | Contact support — this is usually an error. [Refunds](/guide/credits-plans-modes#the-queue) are available. |
 | Render time estimate keeps growing | Known issue. Wait for completion or contact support. |
-| Renders queuing in Credits mode despite available credits | Likely GPU saturation. Wait, or switch to Relaxed mode for non-urgent work. |
+| Renders queuing in Credits mode despite available credits | Likely GPU saturation. Wait, or use Relaxed/Unlimited mode (if your plan includes it) for non-urgent work. |
 
 ## Prompt issues
 

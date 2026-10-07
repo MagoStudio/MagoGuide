@@ -17,17 +17,18 @@ Mago has an active [Discord community](https://www.mago.studio/). Use it for:
 
 - **This documentation** — the complete feature reference.
 - **Knowledge center** — derived articles organized by user goal.
-- **Plans page FAQ** — billing and usage questions.
+- **Plans page FAQ** — billing and usage questions (on the Pricing page).
 
 ## Enterprise support
 
 Enterprise customers receive:
 
-- A dedicated support contact.
-- Custom model training.
-- Private cloud or on-premise deployment.
-- NDA-grade IP terms.
-- Territory-specific deployment options.
+- Custom support: private channel, account manager, SLAs.
+- Onboarding session and team training.
+- Dedicated infrastructure.
+- Custom models.
+- Custom moderation and safeguards.
+- Custom NDAs and DPAs.
 
 Contact through the **Pricing → Contact Us** flow for Enterprise inquiries.
 

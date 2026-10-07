@@ -51,7 +51,7 @@ Auto Prompt generates a starting prompt from a description of the source video, 
 
 **Use it for:** a starting point when unsure how to describe a complex scene, quick prototyping, and adapting prompts when changing scenes (it adjusts to context — e.g. dropping human terms for a nature scene).
 
-Available for: Mago Transform, Mago Style Transfer, Mago Inpaint, Mago Character, and Kling 2.6 Motion Control.
+Available for: Mago Transform, Mago Style Transfer, Mago Inpaint, Mago Character, Mago Clean Plate, and Kling 2.6 / 3.0 Motion Control.
 
 ## Image references vs. prompts
 
@@ -62,15 +62,6 @@ Order of investment for best results:
 1. Generate a strong reference image in [Modify Frame](/guide/workspaces/modify-frame).
 2. Write a short descriptive prompt that matches.
 3. Tune ControlNet and other settings only if results need refinement.
-
-## Negative prompts
-
-Available on some models. Use to exclude unwanted artifacts or content. Common values:
-
-- low quality, blurry, distorted
-- extra faces, extra limbs, deformed
-- NSFW (in mixed contexts)
-- text
 
 ---
 

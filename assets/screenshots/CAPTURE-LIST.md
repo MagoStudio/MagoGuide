@@ -20,7 +20,7 @@ Convention in the docs:
 - [x] `projects/shots.jpg` — The shots panel showing multiple shots inside a project
 
 ## Application layout
-- [x] `app-layout/top-bar.png` — Annotated top bar (logo, project, shot, credits, Relaxed, Pricing, Queue, avatar)
+- [x] `app-layout/top-bar.png` — Annotated top bar (logo, project, shot, credits, Relaxed/Unlimited toggle, Pricing, Queue, avatar)
 - [ ] `app-layout/workspace-tabs.png` — The five workspace tabs
 
 ## Workspaces

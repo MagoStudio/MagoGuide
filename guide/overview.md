@@ -12,7 +12,7 @@ Everything you need to use Mago Studio, from your first render to advanced multi
 | [Getting started](/guide/getting-started) | Your first render, end to end |
 | [Application layout](/guide/app-layout) | The five surfaces, top bar, and workspace tabs |
 | [Projects, shots & renders](/guide/projects-shots-renders) | The three-level hierarchy and how work is organized |
-| [Credits, plans & modes](/guide/credits-plans-modes) | Credits, Relaxed mode, plans, the queue, billing |
+| [Credits, plans & modes](/guide/credits-plans-modes) | Credits, Relaxed and Unlimited modes, plans, the queue, billing |
 
 ## The five workspaces
 

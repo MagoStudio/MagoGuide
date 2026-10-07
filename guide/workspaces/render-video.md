@@ -40,7 +40,6 @@ Most Render Video models share a similar layout, though specifics vary.
 - **Style or first frame** — a frame that anchors the style or beginning of the render: a modified frame, an uploaded image, or a keyframe at a specific frame number. Some models accept a looser *reference frame* instead.
 - **Prompt** — describes the desired result (Mago) or instructs the model (closed-source). See [Prompting](/guide/prompting-guide).
 - **Auto Prompt** — generates a prompt from a description of the source and the reference frame. **Regenerate** or **Use Prompt**. Adapts to scene context (e.g. drops human terms for a nature scene).
-- **Negative prompt** — excludes unwanted content. Common: _low quality, NSFW, extra faces, deformed._
 - **ControlNets** (Mago Transform only) — depth, pose, softedge (beta), depth+pose, normal map (beta). See [Mago Transform → ControlNets](/models/mago-video-models#controlnets-for-mago-transform).
 
 ### Advanced tab
@@ -50,7 +49,7 @@ Most Render Video models share a similar layout, though specifics vary.
 | **Output size** | Longest side of the output. Default 1280. Higher costs more and is slower. |
 | **Steps** | Inference depth. More steps = sharper, more detailed, slower, costlier. |
 | **Interpolation** | Renders every other frame and interpolates. Cheaper/faster but may miss fine detail. |
-| **Image sequence export** | PNG or EXR 16-bit. EXR is for [VFX pipelines](/guide/export-and-compositing#exr-for-vfx-pipelines) (Mago Transform & Style Transfer). |
+| **Images format** | PNG or EXR 16-bit. EXR is for [VFX pipelines](/guide/export-and-compositing#exr-for-vfx-pipelines) (Mago Transform & Style Transfer). |
 | **Prompt strength** | How closely the model follows the prompt. |
 | **Color consistency** | Controls color stability across frames. |
 | **Seed** | Same seed + same settings = same output. Useful for reproducibility. |
@@ -62,9 +61,9 @@ Long renders are split into chunks; these control the chunking.
 
 | Setting | Default | Notes |
 | --- | --- | --- |
-| **Context size** | 150 | Frames per chunk. |
+| **Context size** | Varies by model (e.g. 120 Mago Transform, 300 Mago Style Transfer and Mago Character) | Frames per chunk. |
 | **Context overlap** | — | Frames overlapping between chunks. Lower for high movement, higher for static/slow. |
-| **Dynamic reference** | On | Regenerates a reference between chunks. On by default for high-movement video; disable for very static shots needing maximum consistency. |
+| **Dynamic reference** | Varies by model (On for Mago Style Transfer and Mago Inpaint, Off for Mago Transform and Mago Character) | Regenerates a reference between chunks. Helps high-movement video; disable for very static shots needing maximum consistency. |
 
 ## Generate buttons
 

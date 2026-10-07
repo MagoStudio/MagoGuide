@@ -86,7 +86,7 @@ flowchart TD
 5. Click **Use this**.
 6. **Pass 2 (Render, Mago Style Transfer):** apply the style to the character-replaced render, using the stylized frame as reference.
 7. On the stylized result, click **Edit this Render** again.
-8. **Pass 3 (Upscale):** Upscaler ×2 for clean enlargement, or Creative Upscaler at denoise 0.3–0.5 for detail.
+8. **Pass 3 (Upscale):** Upscaler ×2 for clean enlargement, or Creative Upscaler at detail enhancement 0.3–0.5 for detail.
 9. **Result:** a high-resolution, stylized, character-replaced render — produced through controllable, independently iterable steps.
 
 > **📐 Why multi-pass** — Doing everything at once is unreliable: the models start fighting each other, and there's no way to fix one step without redoing all of it. Multi-pass takes longer but is dramatically more controllable for production work.
@@ -95,16 +95,16 @@ flowchart TD
 
 | Goal | Recommended | Alternative |
 | --- | --- | --- |
-| Transform an entire scene | Mago Transform | Kling 03 Pro, Seedance 2.0 |
+| Transform an entire scene | Mago Transform | Kling O3 Pro, Seedance 2.0 |
 | Restyle while preserving lip sync | Mago Style Transfer | Kling 3.0 Motion Control |
 | Replace a character | Mago Character | Kling 3.0 Motion Control |
 | Edit a specific element | Mago Inpaint | Happy Horse |
-| Quick VFX, no precision needs | Happy Horse, Seedance 2.0 | Kling 03 Pro |
+| Quick VFX, no precision needs | Happy Horse, Seedance 2.0 | Kling O3 Pro |
 | Edit a single image | GPT Image 2 | Nano Banana 2 |
-| Clean upscale | Upscaler | Creative Upscaler (low denoise) |
+| Clean upscale | Upscaler | Creative Upscaler (low detail enhancement) |
 | Restoration upscale with detail | Creative Upscaler | Mago Style Transfer (heavy restorations) |
-| Style transfer at the image level | GPT Image 2 | Seedream |
-| Character prep for video | GPT Image 2 / Nano Banana Pro | MAGO Pose Transfer |
+| Style transfer at the image level | GPT Image 2 | Seedream 5.0 Pro |
+| Character prep for video | GPT Image 2 / Nano Banana Pro | Nano Banana 2 |
 
 ---
 

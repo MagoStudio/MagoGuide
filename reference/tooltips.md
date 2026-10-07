@@ -12,11 +12,15 @@
 
 | Element                         | Tooltip text                                                                                                                                                 |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Relaxed mode                    | Relaxed rendering, does not require credits, one or two renders at a time. Perfect for experimentation and non-urgent projects                               |
+| Relaxed mode (plan table)       | Relaxed mode allows for free renders for all Mago models |
+| Unlimited mode (plan table)     | Unlimited mode allows for free renders for all Mago models and API models (Seedance, Kling, etc.) |
 | Relaxed mode plan (frame limit) | Capped at {{ frames }} frames per render                                                                                                                     |
+| Basic monthly plan              | 500 credits ≈ 1 video (5 sec, 720p, 24fps); 500 credits ≈ 3 images                                                                                           |
 | Pro monthly plan                | 15000 credits ≈ 25 videos (5 sec, 720p, 24fps); 15000 credits ≈ 90 images                                                                                    |
 | Studio monthly plan             | {{ count }} credits included monthly                                                                                                                         |
 | Credit mode                     | Uses credits, launch as many simultaneous renders as you want; capped at a {{ frames }} frames limit. Ideal for tight deadlines and final production renders |
+
+> The plan-table tooltips summarise model coverage. The per-model list, including GPT Image 2 in Relaxed mode and the image models in Unlimited mode, is in the [model catalog](/models/overview#availability-by-mode).
 
 ## Render preview / action buttons
 
@@ -25,17 +29,19 @@
 | One video                         | One video                                                          |
 | Split view slider                 | Split view slider                                                  |
 | Compare two tracks                | Compare two video tracks                                           |
-| Compare four tracks               | Compare four video tracks                                          |
-| Download frame                    | Download a frame from the video so you can stylize it elsewhere    |
 | Fullscreen viewport               | Open fullscreen viewport                                           |
+| Crop toggle                       | Draw a crop to render only that area                               |
+| Zoom reset                        | Reset                                                              |
 | Download SBS video                | Download side-by-side comparison video                             |
 | Download SBS video (disabled)     | Select a single finished render track to download comparison video |
+| Download SBS video (cropped)      | Comparison video is not available yet for cropped renders          |
 | Toggle settings panel             | Show or hide settings                                              |
 | Nav credits                       | Credit Balance, click to add more                                  |
 | Like / mark a result              | Mark a result                                                      |
 | Add to prompt                     | Paste all description to prompt                                    |
 | Use this image                    | Select this image for video generation                             |
 | Use this image (disabled)         | You can't use this image directly for the currently selected model |
+| Edit this render (disabled)       | This model is no longer available                                  |
 | Pin to global preview             | Pin to global preview                                              |
 | Pin to global preview (disabled)  | Only finished renders can be pinned                                |
 | Re-use settings                   | Re-use settings                                                    |
@@ -60,36 +66,7 @@
 
 | Element               | Tooltip text                                                                                                                                                                                                   |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Prompt                | Describe the transformation you want to apply to the image                                                                                                                                                     |
-| Negative prompt       | Describe what you do not want to see in the output. It can be specific elements that appear in your results and that you wish to remove, or general concepts related to quality (low resolution, bad anatomy). |
 | Image style reference | Add an image and include it in the scene using the prompt as a guide                                                                                                                                           |
-
-## Img2Img — Kontext
-
-| Element | Tooltip text                                                                                          |
-| ------- | ----------------------------------------------------------------------------------------------------- |
-| CFG     | Controls how strongly the prompt influences the result. Higher values mean stronger prompt adherence. |
-| Seed    | Set a specific seed for reproducibility. Leave empty for random seed.                                 |
-
-## Img2Img — Mago
-
-| Element          | Tooltip text                                                                                                                                                                                                                                                                                                          |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Prompt           | Describe the output result you want in descriptive terms: a group of people standing, oil painting style, etc.                                                                                                                                                                                                        |
-| Output size      | Size of the longest side of your target output resolution. If your output is 1920x1080, max size is 1920. Note that the output will automatically respect the aspect ratio of your input video.                                                                                                                       |
-| Steps            | Total diffusion steps: more steps result in sharper and more detailed results but slower processing. Lower steps can help achieving less refined styles. Keep the values between 3 and 10.                                                                                                                            |
-| Image weight     | Controls how strongly the reference image influences the final output. A higher weight means the generation will more closely match the reference image's style and characteristics, while a lower weight creates a more subtle influence and gives more importance to the prompt.                                    |
-| CFG              | The higher the CFG (prompt strength), the more impactful will be the prompt on the stylization process. Make sure to decrease the image weight first to ensure the prompt is taken into account, and try to stay within 2 to 3 for most results.                                                                      |
-| Denoise          | Denoise (or diffusion strength) indicates how different the output frame will be from the input frame. A value of 1 means the style is fully applied with no influence from the original image. A value of 0 means no style is applied and you retain the original image. It affects both image and prompt influence. |
-| Seed             | Random number that will be the starting point of the generation. Try different values for slight variations.                                                                                                                                                                                                          |
-| Depth            | Depth detection in order to determine the distance to each pixel in the frame. Helps in breaking down the frame between background, foreground and specific elements.                                                                                                                                                 |
-| Depth strength   | Controls the strength of depth-based control. Higher values apply stronger depth guidance to the generation.                                                                                                                                                                                                          |
-| Depth range      | Defines the depth range and start/end points for depth processing. Format: range,start,end                                                                                                                                                                                                                            |
-| Depth resolution | Resolution used for controlnet maps. Higher resolutions include more details.                                                                                                                                                                                                                                         |
-| Tile             | Breaks down the frame in small tiles and checks if details within the tile are coherent and in line with the prompt. Helps in getting rid of bad details and refine good details.                                                                                                                                     |
-| Tile start       | Determines when the ControlNet information is used in the generation process — 0 to 1 means it is active for the whole generation, 0 to 0.8 means that the last 20% will be generated free of the ControlNet's influence.                                                                                             |
-| Canny            | A method to detect the edges in an image, turning it into a black—and—white outline. So you can redesign objects while keeping the same outline.                                                                                                                                                                      |
-| Canny weight     | Edge detection (i.e. outlines) in order to preserve the shapes and general details of the input video. The weight determines how strong is the influence of the outlines information.                                                                                                                                 |
 
 ## Img2Img — Nanobanana / Pro / 2
 
@@ -108,7 +85,7 @@
 
 ### Drawn Mask (Seedream 5.0 Pro)
 
-The draw-your-own-mask UI is available to all users on **Seedream 5.0 Pro** (moved off GPT Image 2 in MAG-4410). GPT Image 2 keeps its separate "Mask image" upload field above.
+The draw-your-own-mask UI is available to all users on **Seedream 5.0 Pro**. GPT Image 2 keeps its separate "Mask image" upload field above.
 
 | Element                       | Text                                                                                                                       |
 | ----------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -133,11 +110,28 @@ The draw-your-own-mask UI is available to all users on **Seedream 5.0 Pro** (mov
 | Mask mode     | Create a mask using a prompt or segments. Use prompts to select all people in a frame. To select a specific person, use Visual Selection or describe them precisely, for example: person on the left in a yellow sweater. If other options don't work, try Prompt + Points |
 | Mode switcher | Prompt: describe the area to mask in natural language. Visual selection: click on the frame to place points that mark the area to include or exclude.                                                                                                                      |
 
+## Crop
+
+| Element                            | Text                                                                                                            |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Use this — replaces existing crop  | This shot already has a crop. Using this image will replace it with the crop of the generated image.            |
+| Use this — removes existing crop   | This generated image has no crop. Using it will remove the crop currently set on this shot.                     |
+| Mask / crop mismatch               | The selected mask was generated with a different crop. Adjust the crop or use a matching mask to continue.      |
+| Reference frame / crop mismatch    | The reference frame was generated with a different crop. You need to redo frame.                                |
+| Key frame not cropped              | Your reference frame is not cropped, so it will show the full frame instead of just the cropped area.           |
+
 ## Inpainting
 
-| Element | Tooltip text                                                             |
-| ------- | ------------------------------------------------------------------------ |
-| Prompt  | Describe the changes you want the model to apply inside the masked area. |
+Field **labels**, plus the tooltips of the mask settings (`invert_mask`, `grow_mask_expand`). Other settings of this model also carry tooltips in the app; they are not listed here.
+
+| Element             | Text                              |
+| ------------------- | --------------------------------- |
+| Editing prompt      | Editing prompt                    |
+| Editing prompt hint | Support your changes with prompt  |
+| Mask prompt         | Mask prompt (area to be changed)  |
+| Applied mask        | Mask                              |
+| Invert              | When enabled, the mask is inverted so the masked area becomes unmasked and vice versa. |
+| Expand by           | Expands the mask boundary outward by the specified number of pixels. Increase if the mask is cutting off edges of the detected object. |
 
 ---
 
